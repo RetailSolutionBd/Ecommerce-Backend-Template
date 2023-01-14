@@ -7,7 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Add Product | Backend</title>
+    <title>Add Purchase | Backend</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link
@@ -19,21 +19,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
       rel="stylesheet"
       href="../../plugins/fontawesome-free/css/all.min.css"
     />
-    <!-- summernote -->
-    <link rel="stylesheet" href="../../plugins/summernote/summernote-bs4.min.css">
-    <style>
-      .note-editor { box-shadow: none !important; }
-    </style>
     
     <!-- Select2 -->
     <link rel="stylesheet" href="../../plugins/select2/css/select2.min.css">
     <link rel="stylesheet" href="../../plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
-
-    <!-- iCheck for checkboxes and radio inputs -->
-    <link rel="stylesheet" href="../../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-
-    <!-- Tagify -->
-    <link href="https://cdn.jsdelivr.net/npm/@yaireo/tagify/dist/tagify.css" rel="stylesheet" type="text/css" />
 
     <!-- Theme style -->
     <link rel="stylesheet" href="../../dist/css/adminlte.min.css" />
@@ -573,7 +562,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <div class="container-fluid">
             <div class="row mb-2">
               <div class="col-sm-6">
-                <h1 class="m-0">Add Product</h1>
+                <h1 class="m-0">Add Purchase</h1>
               </div>
               <!-- /.col -->
               <div class="col-sm-6">
@@ -582,7 +571,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <a href="javascript:void(0);">Home</a>
                   </li>
                   <li class="breadcrumb-item">
-                    <a href="javascript:void(0);">Product</a>
+                    <a href="javascript:void(0);">Purchase</a>
                   </li>
                   <li class="breadcrumb-item">Add</li>
                 </ol>
@@ -600,49 +589,73 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <div class="container-fluid">
             <!-- Form -->
             <form>
-            <!-- Row -->
-            <div class="row mt-4">
-              <!-- Col -->
-              <div class="col-xl-6 col-lg-12">
-                <div class="card mb-4">
-                  <div class="card-header border-0">
-                    <h3 class="card-title">Details</h3>
-                    <div class="card-tools">
-                      <a href="javascript:void(0);" class="btn btn-sm btn-tool">
-                        <i class="fas fa-download"></i>
-                      </a>
-                      <a href="javascript:void(0);" class="btn btn-sm btn-tool">
-                        <i class="fas fa-bars"></i>
-                      </a>
+              <!-- Row -->
+              <div class="row mt-4">
+                <!-- Col -->
+                <div class="col-xl-6 col-lg-12">
+                  <div class="card mb-4">
+                    <div class="card-header border-0">
+                      <h3 class="card-title">Details</h3>
+                      <div class="card-tools">
+                        <a href="javascript:void(0);" class="btn btn-sm btn-tool">
+                          <i class="fas fa-download"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="btn btn-sm btn-tool">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                      </div>
                     </div>
-                  </div>
-                  <div class="card-body">
-                      <!-- text input -->
-                      <div class="form-group mb-3">
-                        <label>Title</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="Enter ..."
-                        />
+                    <div class="card-body">
+                      <!-- row -->
+                      <div class="row">
+                        <!-- col -->
+                        <div class="col">
+                          <!-- text input -->
+                          <div class="form-group mb-3">
+                            <label>Date</label>
+                            <input type="datetime-local" class="form-control" placeholder="Enter ..." />
+                          </div>
+                          <!--/ text input -->
+                        </div>
+                        <!--/ col -->
+              
+                        <!-- col -->
+                        <div class="col">
+                          <!-- Select -->
+                          <div class="form-group mb-3">
+                            <label>Supplier</label>
+                            <select class="select2" style="width: 100%;">
+                              <option>Alabama</option>
+                              <option>Alaska</option>
+                              <option>California</option>
+                              <option>Delaware</option>
+                              <option>Tennessee</option>
+                              <option>Texas</option>
+                              <option>Washington</option>
+                            </select>
+                          </div>
+                          <!--/ Select -->
+                        </div>
+                        <!--/ col -->
                       </div>
-                      <!--/ text input -->
+                      <!--/ row -->
 
-                      <!-- textarea -->
-                      <div class="form-group mb-3">
-                        <label>Short Description</label>
-                        <textarea class="form-control" rows="7" placeholder="Enter ..."></textarea>
+                      <!-- row -->
+                      <b class="mt-4">Product</b>
+                      <div class="row mb-3 field_wrapper">
+                        <div class="col-lg-7">
+                            <input type="text" name="field_name[]" class="form-control" placeholder="Product" />
+                        </div>
+                        <div class="col-lg-4">
+                          <input type="number" class="form-control" placeholder="Quantity" />
+                        </div>
+                        <div class="col-lg-1">
+                            <a href="javascript:void(0);" class="btn btn-sm btn-default mt-1 add_button">
+                              <i class="fa fa-plus"></i>
+                            </a>
+                        </div>
                       </div>
-                      <!--/ textarea -->
-
-                      <!-- textarea -->
-                      <div class="form-group mb-3">
-                        <label>Description</label>
-                        <textarea id="summernote">
-                          Place <em>some</em> <u>text</u> <strong>here</strong>
-                        </textarea>
-                      </div>  
-                      <!--/ textarea -->
+                      <!--/ row -->
 
                       <!-- textarea -->
                       <div class="form-group">
@@ -672,11 +685,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <div class="col">
                         <!-- text input -->
                         <div class="form-group">
-                          <label>Compare Price</label>
+                          <label>Tax</label>
                           <input
                             type="number"
                             class="form-control"
-                            placeholder="Compare Price"
+                            placeholder="Tax"
                           />
                         </div>
                         <!--/ text input -->
@@ -687,11 +700,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <div class="col">
                         <!-- text input -->
                         <div class="form-group">
-                          <label>Price</label>
+                          <label>Discount</label>
                           <input
                             type="number"
                             class="form-control"
-                            placeholder="Price"
+                            placeholder="Discount"
                           />
                         </div>
                         <!--/ text input -->
@@ -701,12 +714,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <!--/ row -->
 
                     <!-- text input -->
-                    <div class="form-group">
-                      <label>Discount(%)</label>
+                    <div class="form-group w-50">
+                      <label>Shipping</label>
                       <input
                         type="number"
                         class="form-control"
-                        placeholder="Discount(%)"
+                        placeholder="Shipping"
                       />
                     </div>
                     <!--/ text input -->
@@ -717,104 +730,35 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <!--/ Col -->
 
               <!-- Col -->
-              <div class="col-xl-3 col-lg-12">
-                <div class="card">
-                  <div class="card-header border-0">
-                    <h3 class="card-title">Belongs to</h3>
-                  </div>
-                  <div class="card-body">   
-                    <div class="form-group mb-3">
-                      <label>Category</label>
-                      <select class="select2" multiple="multiple" data-placeholder="Select a State" style="width: 100%;">
-                        <option>Alabama</option>
-                        <option>Alaska</option>
-                        <option>California</option>
-                        <option>Delaware</option>
-                        <option>Tennessee</option>
-                        <option>Texas</option>
-                        <option>Washington</option>
-                      </select>
-                    </div>
-
-                    <div class="form-group mb-3">
-                      <label>Brand</label>
-                      <select class="select2" multiple="multiple" data-placeholder="Select a State" style="width: 100%;">
-                        <option>Alabama</option>
-                        <option>Alaska</option>
-                        <option>California</option>
-                        <option>Delaware</option>
-                        <option>Tennessee</option>
-                        <option>Texas</option>
-                        <option>Washington</option>
-                      </select>
-                    </div>
-
-                    <div class="form-group">
-                      <label>Tag</label>
-                      <input name="basic" class="d-block rounded tagify" placeholder="Tag" value="">
-                    </div>                    
-                  </div>
-                </div>
-
-                <div class="card">
+              <div class="col-xl-3 col-lg-12">  
+                <div class="card mb-3">
                   <div class="card-header border-0">
                     <h3 class="card-title">Status</h3>
                   </div>
-                  <div class="card-body">              
-                    <div class="form-group clearfix">
-                      <div class="icheck-info d-inline">
-                        <input type="checkbox" id="checkbox_1">
-                        <label for="checkbox_1">
-                          Published?
-                        </label>
-                      </div>
+                  <div class="card-body">   
+                    <!-- Select -->
+                    <div class="form-group mb-3">
+                      <select class="select2" style="width: 100%;">
+                        <option>Received</option>
+                        <option>Ordered</option>
+                        <option>Pending</option>
+                      </select>
                     </div>
-              
-                    <div class="form-group clearfix">
-                      <div class="icheck-info d-inline">
-                        <input type="checkbox" id="chechbox_2">
-                        <label for="chechbox_2">
-                          Featured?
-                        </label>
-                      </div>
-                    </div>
+                    <!--/ Select -->                                        
                   </div>
-                </div>
-
+                </div>   
+                
                 <div class="card">
-                  <div class="card-header border-0">
-                    <h3 class="card-title">Image</h3>
+                  <div class="card-body">
+                    <button type="submit" class="btn bg-info rounded-pill">Submit</button>
                   </div>
-                  <div class="card-body">                      
-                    <img src="../../dist/img/placeholder.png" class="w-25 mb-4 img-thumbnail" id="image_preview" alt="Placeholder">            
-                    <div class="custom-file mb-3">
-                      <input type="file" class="custom-file-input" id="image_input" name="filename">
-                      <label class="custom-file-label" for="image_input">Choose file</label>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card">
-                  <div class="card-header border-0">
-                    <h3 class="card-title">Additional Images</h3>
-                  </div>
-                  <div class="card-body">            
-                    <div class="custom-file mb-3">
-                      <input type="file" class="custom-file-input" id="additional_images_input" name="filename">
-                      <label class="custom-file-label" for="additional_images_input">Choose files</label>
-                    </div>
-                  </div>
-                </div>
+                </div>        
               </div>
               <!--/ Col -->
 
               <!-- Col -->
               <div class="col-xl-3 col-lg-12">
-                <div class="card">
-                  <div class="card-body">
-                    <button type="submit" class="btn bg-info rounded-pill">Submit</button>
-                  </div>
-                </div>
+                
               </div>
               <!--/ Col -->
             </div>
@@ -860,26 +804,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- AdminLTE App -->
     <script src="../../dist/js/adminlte.min.js"></script>
 
-    <!-- Summernote -->
-    <script src="../../plugins/summernote/summernote-bs4.min.js"></script>    
-    <script>
-      $(function () {
-        // Summernote
-        $('#summernote').summernote({
-          height: 350, 
-          toolbar: [
-            ['style', ['bold', 'italic', 'underline', 'clear']],
-            ['font', ['strikethrough', 'superscript', 'subscript']],
-            ['fontsize', ['fontsize']],
-            ['color', ['color']],
-            ['para', ['ul', 'ol', 'paragraph']],
-            ['height', ['height']]
-          ]
-        })
-      })
-    </script>
-    <!--/ Summernote -->
-
     <!-- Select2 -->
     <script src="../../plugins/select2/js/select2.full.min.js"></script>
     <script>
@@ -889,46 +813,46 @@ scratch. This page gets rid of all links and provides the needed markup only.
       });
     </script>
 
-     <!-- Custom File Input -->     
-     <script>
-      $(function () {
-        $("#image_input").on("change", function () {
-          // Image Upload Preview
-          const file = this.files[0];
-          console.log(file);
-          if (file) {
-            let reader = new FileReader();
-            reader.onload = function (event) {
-              console.log(event.target.result);
-              $('#image_preview').attr('src', event.target.result);
-            }
-            reader.readAsDataURL(file);
-          }
+    <!-- Add or Remove Field -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        var maxField = 10; //Input fields increment limitation
+        var addButton = $('.add_button'); //Add button selector
+        var wrapper = $('.field_wrapper'); //Input field wrapper
 
-          // Image Upload Input Show File Name
-          var fileName = $(this).val().split("\\").pop();
-          $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+        var fieldHTML = ''; //New input field html       
+        fieldHTML += '<div class="col-lg-7 mt-3">';
+        fieldHTML += '<input type="text" name="field_name[]" class="form-control" placeholder="Product" />';
+        fieldHTML += '</div>';
+        fieldHTML += '<div class="col-lg-4 mt-3">';
+        fieldHTML += '<input type="number" class="form-control" placeholder="Quantity" />';
+        fieldHTML += '</div>';
+        fieldHTML += '<div class="col-lg-1 mt-3">';
+        fieldHTML += '<a href="javascript:void(0);" class="btn btn-sm btn-danger mt-1 remove_button">';
+        fieldHTML += '<i class="fa fa-plus"></i>';
+        fieldHTML += '</a>';
+        fieldHTML += '</div>';
+
+
+        var x = 1; //Initial field counter is 1
+
+        //Once add button is clicked
+        $(addButton).click(function () {
+          //Check maximum number of input fields
+          if (x < maxField) {
+            x++; //Increment field counter
+            $(wrapper).append(fieldHTML); //Add field html
+          }
         });
 
-        // Additional Images 
-        $("#additional_images_input").on("change", function () {
-          // Image Upload Input Show File Name
-          var filesName = $(this).val().split("\\").pop();
-          $(this).siblings(".custom-file-label").addClass("selected").html(filesName);
-        });        
+        //Once remove button is clicked
+        $(wrapper).on('click', '.remove_button', function (e) {
+          e.preventDefault();
+          $(this).parent('div').remove(); //Remove field html
+          x--; //Decrement field counter
+        });
       });
-     </script>
-     <!--/ Custom File Input -->
-
-    <!-- Tagify -->     
-    <script src="https://cdn.jsdelivr.net/npm/@yaireo/tagify"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@yaireo/tagify/dist/tagify.polyfills.min.js"></script>
-    <script>
-      // The DOM element you wish to replace with Tagify
-      var tagify_input = document.querySelector(".tagify");
-      // initialize Tagify on the above input node reference
-      new Tagify(tagify_input)
     </script>
-    <!--/ Tagify -->
+    <!--/ Add or Remove Field -->
   </body>
 </html>
