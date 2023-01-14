@@ -7,7 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Add Category | Backend</title>
+    <title>Add Brand | Backend</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link
@@ -17,13 +17,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Font Awesome Icons -->
     <link
       rel="stylesheet"
-      href="../../plugins/fontawesome-free/css/all.min.css"
-    />
-    <!-- summernote -->
-    <link rel="stylesheet" href="../../plugins/summernote/summernote-bs4.min.css">
-    <style>
-      .note-editor { box-shadow: none !important; }
-    </style>
+      href="../../plugins/fontawesome-free/css/all.min.css" />
 
     <!-- iCheck for checkboxes and radio inputs -->
     <link rel="stylesheet" href="../../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
@@ -565,7 +559,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <div class="container-fluid">
             <div class="row mb-2">
               <div class="col-sm-6">
-                <h1 class="m-0">Add Category</h1>
+                <h1 class="m-0">Add Brand</h1>
               </div>
               <!-- /.col -->
               <div class="col-sm-6">
@@ -574,7 +568,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <a href="javascript:void(0);">Home</a>
                   </li>
                   <li class="breadcrumb-item">
-                    <a href="javascript:void(0);">Category</a>
+                    <a href="javascript:void(0);">Brand</a>
                   </li>
                   <li class="breadcrumb-item">Add</li>
                 </ol>
@@ -623,17 +617,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <!-- textarea -->
                       <div class="form-group">
                         <label>Short Description</label>
-                        <textarea class="form-control" rows="7" placeholder="Enter ..."></textarea>
+                        <textarea class="form-control" rows="10" placeholder="Enter ..."></textarea>
                       </div>
-                      <!--/ textarea -->
-
-                      <!-- textarea -->
-                      <div class="form-group">
-                        <label>Description</label>
-                        <textarea id="summernote">
-                          Place <em>some</em> <u>text</u> <strong>here</strong>
-                        </textarea>
-                      </div>  
                       <!--/ textarea -->
                   </div>
                 </div>
@@ -642,31 +627,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
               <!-- Col -->
               <div class="col-lg-3">
-                <div class="card">
-                  <div class="card-header border-0">
-                    <h3 class="card-title">Status</h3>
-                  </div>
-                  <div class="card-body">              
-                    <div class="form-group clearfix">
-                      <div class="icheck-info d-inline">
-                        <input type="checkbox" id="checkbox_1">
-                        <label for="checkbox_1">
-                          Published?
-                        </label>
-                      </div>
-                    </div>
-              
-                    <div class="form-group clearfix">
-                      <div class="icheck-info d-inline">
-                        <input type="checkbox" id="chechbox_2">
-                        <label for="chechbox_2">
-                          Menu Item?
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
                 <div class="card">
                   <div class="card-header border-0">
                     <h3 class="card-title">Image</h3>
@@ -729,26 +689,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- AdminLTE App -->
     <script src="../../dist/js/adminlte.min.js"></script>
-
-    <!-- Summernote -->
-    <script src="../../plugins/summernote/summernote-bs4.min.js"></script>    
-    <script>
-      $(function () {
-        // Summernote
-        $('#summernote').summernote({
-          height: 350, 
-          toolbar: [
-            ['style', ['bold', 'italic', 'underline', 'clear']],
-            ['font', ['strikethrough', 'superscript', 'subscript']],
-            ['fontsize', ['fontsize']],
-            ['color', ['color']],
-            ['para', ['ul', 'ol', 'paragraph']],
-            ['height', ['height']]
-          ]
-        })
-      })
-    </script>
-    <!--/ Summernote -->
 
      <!-- Custom File Input -->
      <script>
