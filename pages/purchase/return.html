@@ -7,7 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Add Purchase | Backend</title>
+    <title>Return Purchase | Backend</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link
@@ -562,7 +562,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <div class="container-fluid">
             <div class="row mb-2">
               <div class="col-sm-6">
-                <h1 class="m-0">Add Purchase</h1>
+                <h1 class="m-0">Return Purchase</h1>
               </div>
               <!-- /.col -->
               <div class="col-sm-6">
@@ -573,7 +573,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <li class="breadcrumb-item">
                     <a href="javascript:void(0);">Purchase</a>
                   </li>
-                  <li class="breadcrumb-item">Add</li>
+                  <li class="breadcrumb-item">Return</li>
                 </ol>
               </div>
               <!-- /.col -->
@@ -618,7 +618,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                           <!--/ text input -->
                         </div>
                         <!--/ col -->
-              
+            
                         <!-- col -->
                         <div class="col">
                           <!-- Select -->
@@ -639,131 +639,65 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <!--/ col -->
                       </div>
                       <!--/ row -->
-
+            
                       <!-- row -->
                       <b class="mt-4">Product</b>
                       <div class="mt-2 mb-3 field_wrapper">
                         <div class="row">
                           <div class="col-lg-7">
-                              <input type="text" name="field_name[]" class="form-control" placeholder="Product" />
+                            <input type="text" name="field_name[]" class="form-control" placeholder="Product" />
                           </div>
                           <div class="col-lg-4">
                             <input type="number" class="form-control" placeholder="Quantity" />
                           </div>
                           <div class="col-lg-1">
-                              <a href="javascript:void(0);" class="btn btn-sm btn-default mt-1 add_button">
-                                <i class="fa fa-plus"></i>
-                              </a>
+                            <a href="javascript:void(0);" class="btn btn-sm btn-default mt-1 add_button">
+                              <i class="fa fa-plus"></i>
+                            </a>
                           </div>
                         </div>
                       </div>
                       <!--/ row -->
-
+            
                       <!-- textarea -->
                       <div class="form-group">
                         <label>Note</label>
                         <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
                       </div>
                       <!--/ textarea -->
-                  </div>
-                </div>               
-                
-                <div class="card">
-                  <div class="card-header border-0">
-                    <h3 class="card-title">Pricing</h3>
-                    <div class="card-tools">
-                      <a href="javascript:void(0);" class="btn btn-sm btn-tool">
-                        <i class="fas fa-download"></i>
-                      </a>
-                      <a href="javascript:void(0);" class="btn btn-sm btn-tool">
-                        <i class="fas fa-bars"></i>
-                      </a>
                     </div>
-                  </div>
-                  <div class="card-body">
-                    <!-- row -->
-                    <div class="row">
-                      <!-- col -->
-                      <div class="col">
-                        <!-- text input -->
-                        <div class="form-group">
-                          <label>Tax</label>
-                          <input
-                            type="number"
-                            class="form-control"
-                            placeholder="Tax"
-                          />
-                        </div>
-                        <!--/ text input -->
-                      </div>
-                      <!--/ col -->
-
-                      <!-- col -->
-                      <div class="col">
-                        <!-- text input -->
-                        <div class="form-group">
-                          <label>Discount</label>
-                          <input
-                            type="number"
-                            class="form-control"
-                            placeholder="Discount"
-                          />
-                        </div>
-                        <!--/ text input -->
-                      </div>
-                      <!--/ col -->
-                    </div>
-                    <!--/ row -->
-
-                    <!-- text input -->
-                    <div class="form-group w-50">
-                      <label>Shipping</label>
-                      <input
-                        type="number"
-                        class="form-control"
-                        placeholder="Shipping"
-                      />
-                    </div>
-                    <!--/ text input -->
-                      
                   </div>
                 </div>
-              </div>
-              <!--/ Col -->
-
-              <!-- Col -->
-              <div class="col-xl-3 col-lg-12">  
-                <div class="card mb-3">
-                  <div class="card-header border-0">
-                    <h3 class="card-title">Status</h3>
-                  </div>
-                  <div class="card-body">   
-                    <!-- Select -->
-                    <div class="form-group mb-3">
-                      <select class="form-control">
-                        <option>Received</option>
-                        <option>Ordered</option>
-                        <option>Pending</option>
-                      </select>
+                <!--/ Col -->
+            
+                <!-- Col -->
+                <div class="col-xl-3 col-lg-12">
+                  <div class="card mb-3">
+                    <div class="card-header border-0">
+                      <h3 class="card-title">Status</h3>
                     </div>
-                    <!--/ Select -->                                        
+                    <div class="card-body">
+                      <!-- Select -->
+                      <div class="form-group mb-3">
+                        <select class="form-control">
+                          <option>Received</option>
+                          <option>Ordered</option>
+                          <option>Pending</option>
+                        </select>
+                      </div>
+                      <!--/ Select -->
+                    </div>
                   </div>
-                </div>   
-                
-                <div class="card">
-                  <div class="card-body">
-                    <button type="submit" class="btn bg-info rounded-pill">Submit</button>
+            
+                  <div class="card">
+                    <div class="card-body">
+                      <button type="submit" class="btn bg-info rounded-pill">Submit</button>
+                    </div>
                   </div>
-                </div>        
+                </div>
+                <!--/ Col -->
               </div>
-              <!--/ Col -->
-
-              <!-- Col -->
-              <div class="col-xl-3 col-lg-12">                
-              </div>
-              <!--/ Col -->
-            </div>
-            <!--/ Row -->
+              <!--/ Row -->
             </form>
             <!--/ Form -->
           </div>
