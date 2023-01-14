@@ -24,6 +24,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <style>
       .note-editor { box-shadow: none !important; }
     </style>
+    
+    <!-- Select2 -->
+    <link rel="stylesheet" href="../../plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="../../plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
 
     <!-- iCheck for checkboxes and radio inputs -->
     <link rel="stylesheet" href="../../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
@@ -644,6 +648,25 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <div class="col-lg-3">
                 <div class="card">
                   <div class="card-header border-0">
+                    <h3 class="card-title">Parent</h3>
+                  </div>
+                  <div class="card-body">   
+                    <div class="form-group">
+                      <select class="form-control select2" style="width: 100%;">
+                        <option selected="selected">Alabama</option>
+                        <option>Alaska</option>
+                        <option>California</option>
+                        <option>Delaware</option>
+                        <option>Tennessee</option>
+                        <option>Texas</option>
+                        <option>Washington</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header border-0">
                     <h3 class="card-title">Status</h3>
                   </div>
                   <div class="card-body">              
@@ -679,7 +702,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     </div>
                   </div>
                 </div>
-              
+              </div>
+              <!--/ Col -->
+
+              <!-- Col -->
+              <div class="col-lg-3">
                 <div class="card">
                   <div class="card-body">
                     <button type="submit" class="btn bg-info rounded-pill">Submit</button>
@@ -750,24 +777,35 @@ scratch. This page gets rid of all links and provides the needed markup only.
     </script>
     <!--/ Summernote -->
 
-     <!-- Custom File Input -->
-     <script>
-      $("#image_input").on("change", function() {
-        // Image Upload Preview
-        const file = this.files[0];
-        console.log(file);
-        if (file){
-          let reader = new FileReader();
-          reader.onload = function(event){
-            console.log(event.target.result);
-            $('#image_preview').attr('src', event.target.result);
-          }
-          reader.readAsDataURL(file);
-        }
+    <!-- Select2 -->
+    <script src="../../plugins/select2/js/select2.full.min.js"></script>
+    <script>
+      $(function () {
+        //Initialize Select2 Elements
+        $('.select2').select2();
+      });
+    </script>
 
-        // Image Upload Input Show File Name
-        var fileName = $(this).val().split("\\").pop();
-        $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+     <!-- Custom File Input -->     
+     <script>
+      $(function () {
+        $("#image_input").on("change", function () {
+          // Image Upload Preview
+          const file = this.files[0];
+          console.log(file);
+          if (file) {
+            let reader = new FileReader();
+            reader.onload = function (event) {
+              console.log(event.target.result);
+              $('#image_preview').attr('src', event.target.result);
+            }
+            reader.readAsDataURL(file);
+          }
+
+          // Image Upload Input Show File Name
+          var fileName = $(this).val().split("\\").pop();
+          $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+        });
       });
      </script>
      <!--/ Custom File Input -->

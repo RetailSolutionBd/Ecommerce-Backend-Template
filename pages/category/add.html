@@ -752,22 +752,24 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
      <!-- Custom File Input -->
      <script>
-      $("#image_input").on("change", function() {
-        // Image Upload Preview
-        const file = this.files[0];
-        console.log(file);
-        if (file){
-          let reader = new FileReader();
-          reader.onload = function(event){
-            console.log(event.target.result);
-            $('#image_preview').attr('src', event.target.result);
+      $(function () {
+        $("#image_input").on("change", function () {
+          // Image Upload Preview
+          const file = this.files[0];
+          console.log(file);
+          if (file) {
+            let reader = new FileReader();
+            reader.onload = function (event) {
+              console.log(event.target.result);
+              $('#image_preview').attr('src', event.target.result);
+            }
+            reader.readAsDataURL(file);
           }
-          reader.readAsDataURL(file);
-        }
 
-        // Image Upload Input Show File Name
-        var fileName = $(this).val().split("\\").pop();
-        $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+          // Image Upload Input Show File Name
+          var fileName = $(this).val().split("\\").pop();
+          $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+        });
       });
      </script>
      <!--/ Custom File Input -->
