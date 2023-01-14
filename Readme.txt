@@ -7,4 +7,4 @@ Used Plugins
 => IonIcons 
 => FontAwesome
 => jQuery
-=> 
+=> Tagify
