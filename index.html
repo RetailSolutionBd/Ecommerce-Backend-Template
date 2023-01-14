@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard | Backend</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- IonIcons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="javascript:void(0);" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index3.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="javascript:void(0);" class="nav-link">Contact</a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="navbar-search" href="javascript:void(0);" role="button">
+          <i class="fas fa-search"></i>
+        </a>
+        <div class="navbar-search-block">
+          <form class="form-inline">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li>
+
+      <!-- Messages Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="javascript:void(0);">
+          <i class="far fa-comments"></i>
+          <span class="badge badge-danger navbar-badge">3</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <a href="javascript:void(0);" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Brad Diesel
+                  <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">Call me whenever you can...</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="javascript:void(0);" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  John Pierce
+                  <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">I got your message bro</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="javascript:void(0);" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Nora Silvester
+                  <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">The subject goes here</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="javascript:void(0);" class="dropdown-item dropdown-footer">See All Messages</a>
+        </div>
+      </li>
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="javascript:void(0);">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-warning navbar-badge">15</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-header">15 Notifications</span>
+          <div class="dropdown-divider"></div>
+          <a href="javascript:void(0);" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> 4 new messages
+            <span class="float-right text-muted text-sm">3 mins</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="javascript:void(0);" class="dropdown-item">
+            <i class="fas fa-users mr-2"></i> 8 friend requests
+            <span class="float-right text-muted text-sm">12 hours</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="javascript:void(0);" class="dropdown-item">
+            <i class="fas fa-file mr-2"></i> 3 new reports
+            <span class="float-right text-muted text-sm">2 days</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="javascript:void(0);" class="dropdown-item dropdown-footer">See All Notifications</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="javascript:void(0);" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="javascript:void(0);" role="button">
+          <i class="fas fa-th-large"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-light-maroon elevation-2">
+    <!-- Brand Logo -->
+    <a href="index3.html" class="brand-link">
+      <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-2" style="opacity: .8">
+      <span class="brand-text font-weight-light">AdminLTE 3</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="javascript:void(0);" class="d-block">Alexander Pierce</a>
+        </div>
+      </div>
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2 text-sm">
+        <ul class="nav nav-pills nav-sidebar flex-column nav-legacy" data-widget="treeview" role="menu" data-accordion="false">         
+          <!-- Dashboard -->
+          <li class="nav-item my-2">
+            <a href="javascript:void(0);" class="nav-link active">
+              <i class="nav-icon fas fa-border-style"></i>
+              <p>
+                Dashboard
+              </p>
+            </a>
+          </li>
+          <!--/ Dashboard -->
+          
+          <!-- Pages -->
+          <li class="nav-item my-2">
+            <a href="javascript:void(0);" class="nav-link">
+              <i class="nav-icon fas fa-sticky-note"></i>
+              <p>Pages</p>
+            </a>
+          </li>
+          <!--/ Pages -->
+
+          <!-- Ecommerce -->
+          <li class="nav-header mt-2">Ecommerce</li>
+          <!-- Category -->
+          <li class="nav-item  my-2">
+            <a href="javascript:void(0);" class="nav-link">
+              <i class="nav-icon fas fa-clipboard-list"></i>
+              <p>
+                Category
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="javascript:void(0);" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Category</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="javascript:void(0);" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Child Category</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!--/ Category -->
+
+          <!-- Brand -->
+          <li class="nav-item  my-2">
+            <a href="javascript:void(0);" class="nav-link">
+              <i class="nav-icon fas fa-dice-d6"></i>
+              <p>Brand</p>
+            </a>
+          </li>
+          <!--/ Brand -->
+
+          <!-- Unit -->
+          <li class="nav-item  my-2">
+            <a href="javascript:void(0);" class="nav-link">
+              <i class="nav-icon fas fa-drafting-compass"></i>
+              <p>Unit</p>
+            </a>
+          </li>
+          <!--/ Unit -->
+
+          <!-- Product -->
+          <li class="nav-item  my-2">
+            <a href="javascript:void(0);" class="nav-link">
+              <i class="nav-icon fas fa-scroll"></i>
+              <p>Product</p>
+            </a>
+          </li>
+          <!--/ Product -->
+
+          <!-- Purchase -->
+          <li class="nav-item  my-2">
+            <a href="javascript:void(0);" class="nav-link">
+              <i class="nav-icon fas fa-calculator"></i>
+              <p>
+                Purchase
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="javascript:void(0);" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Purchase</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="javascript:void(0);" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Return Purchase</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!--/ Purchase -->
+
+          <!-- Inventory -->
+          <li class="nav-item  my-2">
+            <a href="javascript:void(0);" class="nav-link">
+              <i class="nav-icon fas fa-archive"></i>
+              <p>
+                Inventory
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="javascript:void(0);" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>In Stock</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="javascript:void(0);" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Out of Stock</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="javascript:void(0);" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Damaged Product</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!--/ Inventory -->
+
+          <!-- Order -->
+          <li class="nav-item  my-2">
+            <a href="javascript:void(0);" class="nav-link">
+              <i class="nav-icon fas fa-shopping-bag"></i>
+              <p>
+                Order
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="javascript:void(0);" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>
+                    Order
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="javascript:void(0);" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Return Order</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!--/ Order -->
+
+          <!-- Adjustment -->
+          <li class="nav-item  my-2">
+            <a href="javascript:void(0);" class="nav-link">
+              <i class="nav-icon fas fa-exchange-alt"></i>
+              <p>Adjustment</p>
+            </a>
+          </li>
+          <!--/ Adjustment -->
+
+          <!-- Coupon -->
+          <li class="nav-item  my-2">
+            <a href="javascript:void(0);" class="nav-link">
+              <i class="nav-icon fas fa-percent"></i>
+              <p>Coupon</p>
+            </a>
+          </li>
+          <!--/ Coupon -->
+
+          <!-- Offer -->
+          <li class="nav-item  my-2">
+            <a href="javascript:void(0);" class="nav-link">
+              <i class="nav-icon fas fa-gift"></i>
+              <p>Offer</p>
+            </a>
+          </li>
+          <!--/ Offer -->
+          <!--/ Ecommerce -->
+
+          <!-- People -->
+          <li class="nav-header mt-2">People</li>
+          <!-- Supplier -->
+          <li class="nav-item  my-2">
+            <a href="javascript:void(0);" class="nav-link">
+              <i class="nav-icon fas fa-shipping-fast"></i>
+              <p>
+                Supplier
+                <span class="right badge badge-danger">New</span>
+              </p>
+            </a>
+          </li>
+          <!--/ Supplier -->
+
+          <!-- Delivery man -->
+          <li class="nav-item  my-2">
+            <a href="javascript:void(0);" class="nav-link">
+              <i class="nav-icon fas fa-biking"></i>
+              <p>Delivery man</p>
+            </a>
+          </li>
+          <!--/ Delivery man -->
+
+          <!-- Staff -->
+          <li class="nav-item  my-2">
+            <a href="javascript:void(0);" class="nav-link">
+              <i class="nav-icon fas fa-id-badge"></i>
+              <p>Staff</p>
+            </a>
+          </li>
+          <!--/ Staff -->
+
+          <!-- Admin -->
+          <li class="nav-item  my-2">
+            <a href="javascript:void(0);" class="nav-link">
+              <i class="nav-icon fas fa-user-tie"></i>
+              <p>Admin</p>
+            </a>
+          </li>
+          <!--/ Admin -->
+          <!--/ People -->          
+
+          <!-- Maintenance -->
+          <li class="nav-header mt-2">Maintenance</li>
+          <!-- Delivery -->
+          <li class="nav-item  my-2">
+            <a href="javascript:void(0);" class="nav-link">
+              <i class="nav-icon fas fa-biking"></i>
+              <p>Delivery</p>
+            </a>
+          </li>
+          <!--/ Delivery -->
+
+          
+          <!-- Role & Permission -->
+          <li class="nav-item  my-2">
+            <a href="javascript:void(0);" class="nav-link">
+              <i class="nav-icon fas fa-shield-alt"></i>
+              <p>Role & Permission</p>
+            </a>
+          </li>
+          <!--/ Role & Permission -->
+
+          <!-- Setting -->
+          <li class="nav-item  my-2">
+            <a href="javascript:void(0);" class="nav-link">
+              <i class="nav-icon fas fa-wrench"></i>
+              <p>Setting</p>
+            </a>
+          </li>
+          <!--/ Setting -->
+          <!--/ Maintenance -->
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Dashboard</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item">
+                <a href="javascript:void(0);">Home</a>
+              </li>
+              <li class="breadcrumb-item">Dashboard</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <div class="content">
+      <div class="container-fluid">
+
+        <!-- Top Card -->
+        <div class="row">
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-white">
+              <div class="inner">
+                <h3>33</h3>
+        
+                <b class="text-maroon">Today's Order</b>
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-bag"></i>
+              </div>
+        
+            </div>
+          </div>
+          <!-- ./col -->
+          
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-white">
+              <div class="inner">
+                <h3>1080+</h3>
+        
+                <b class="text-maroon">Today's Purchase</b>
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-ios-calculator"></i>
+              </div>
+        
+            </div>
+          </div>
+          <!-- ./col -->
+          
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-white">
+              <div class="inner">
+                <h3>10</h3>
+        
+                <b class="text-maroon">Today's Adjustment</b>
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-arrow-swap"></i>
+              </div>
+        
+            </div>
+          </div>
+          <!-- ./col -->
+
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-white">
+              <div class="inner">
+                <h3>2300+</h3>
+        
+                <b class="text-maroon">Product</b>
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+              </div>
+              <div class="icon">
+                <i class="fas fa-scroll"></i>
+              </div>
+        
+            </div>
+          </div>
+          <!-- ./col -->  
+        </div>
+        <!--/ Top Card -->
+
+        <!-- Row -->
+        <div class="row mt-4">
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-header border-0">
+                <h3 class="card-title">Online Store Overview</h3>
+                <div class="card-tools">
+                  <a href="javascript:void(0);" class="btn btn-sm btn-tool">
+                    <i class="fas fa-download"></i>
+                  </a>
+                  <a href="javascript:void(0);" class="btn btn-sm btn-tool">
+                    <i class="fas fa-bars"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center border-bottom mb-3">
+                  <p class="text-success text-xl">
+                    <i class="ion ion-ios-refresh-empty"></i>
+                  </p>
+                  <p class="d-flex flex-column text-right">
+                    <span class="font-weight-bold">
+                      <i class="ion ion-android-arrow-up text-success"></i> 12%
+                    </span>
+                    <span class="text-muted">CONVERSION RATE</span>
+                  </p>
+                </div>
+                <!-- /.d-flex -->
+                <div class="d-flex justify-content-between align-items-center border-bottom mb-3">
+                  <p class="text-warning text-xl">
+                    <i class="ion ion-ios-cart-outline"></i>
+                  </p>
+                  <p class="d-flex flex-column text-right">
+                    <span class="font-weight-bold">
+                      <i class="ion ion-android-arrow-up text-warning"></i> 0.8%
+                    </span>
+                    <span class="text-muted">SALES RATE</span>
+                  </p>
+                </div>
+                <!-- /.d-flex -->
+                <div class="d-flex justify-content-between align-items-center mb-0">
+                  <p class="text-danger text-xl">
+                    <i class="ion ion-ios-people-outline"></i>
+                  </p>
+                  <p class="d-flex flex-column text-right">
+                    <span class="font-weight-bold">
+                      <i class="ion ion-android-arrow-down text-danger"></i> 1%
+                    </span>
+                    <span class="text-muted">REGISTRATION RATE</span>
+                  </p>
+                </div>
+                <!-- /.d-flex -->
+              </div>
+            </div>
+            <br>
+            <div class="card">
+              <div class="card-header d-flex p-0">
+                <h3 class="card-title p-3">Tabs</h3>
+                <ul class="nav nav-pills ml-auto p-2">
+                  <li class="nav-item"><a class="nav-link active" href="javascript:void(0);tab_1" data-toggle="tab">Tab 1</a></li>
+                  <li class="nav-item"><a class="nav-link" href="javascript:void(0);tab_2" data-toggle="tab">Tab 2</a></li>
+                  <li class="nav-item"><a class="nav-link" href="javascript:void(0);tab_3" data-toggle="tab">Tab 3</a></li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">
+                      Dropdown <span class="caret"></span>
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" tabindex="-1" href="javascript:void(0);">Action</a>
+                      <a class="dropdown-item" tabindex="-1" href="javascript:void(0);">Another action</a>
+                      <a class="dropdown-item" tabindex="-1" href="javascript:void(0);">Something else here</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" tabindex="-1" href="javascript:void(0);">Separated link</a>
+                    </div>
+                  </li>
+                </ul>
+              </div><!-- /.card-header -->
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane active" id="tab_1">
+                    A wonderful serenity has taken possession of my entire soul,
+                    like these sweet mornings of spring which I enjoy with my whole heart.
+                    I am alone, and feel the charm of existence in this spot,
+                    which was created for the bliss of souls like mine. I am so happy,
+                    my dear friend, so absorbed in the exquisite sense of mere tranquil existence,
+                    that I neglect my talents. I should be incapable of drawing a single stroke
+                    at the present moment; and yet I feel that I never was a greater artist than now.
+                  </div>
+                  <!-- /.tab-pane -->
+                  <div class="tab-pane" id="tab_2">
+                    The European languages are members of the same family. Their separate existence is a myth.
+                    For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ
+                    in their grammar, their pronunciation and their most common words. Everyone realizes why a
+                    new common language would be desirable: one could refuse to pay expensive translators. To
+                    achieve this, it would be necessary to have uniform grammar, pronunciation and more common
+                    words. If several languages coalesce, the grammar of the resulting language is more simple
+                    and regular than that of the individual languages.
+                  </div>
+                  <!-- /.tab-pane -->
+                  <div class="tab-pane" id="tab_3">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    It has survived not only five centuries, but also the leap into electronic typesetting,
+                    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                    sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                  </div>
+                  <!-- /.tab-pane -->
+                </div>
+                <!-- /.tab-content -->
+              </div><!-- /.card-body -->
+            </div>
+          </div>
+
+          <div class="col-lg-6">          
+            <div class="card">
+              <div class="card-header border-0">
+                <h3 class="card-title">Products</h3>
+                <div class="card-tools">
+                  <a href="javascript:void(0);" class="btn btn-tool btn-sm">
+                    <i class="fas fa-download"></i>
+                  </a>
+                  <a href="javascript:void(0);" class="btn btn-tool btn-sm">
+                    <i class="fas fa-bars"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body table-responsive p-0">
+                <table class="table table-valign-middle">
+                  <thead>
+                    <tr>
+                      <th>Product</th>
+                      <th>Price</th>
+                      <th>Sales</th>
+                      <th>More</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img src="dist/img/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
+                        Some Product
+                      </td>
+                      <td>$13 USD</td>
+                      <td>
+                        <small class="text-success mr-1">
+                          <i class="fas fa-arrow-up"></i>
+                          12%
+                        </small>
+                        12,000 Sold
+                      </td>
+                      <td>
+                        <a href="javascript:void(0);" class="text-muted">
+                          <i class="fas fa-search"></i>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="dist/img/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
+                        Another Product
+                      </td>
+                      <td>$29 USD</td>
+                      <td>
+                        <small class="text-warning mr-1">
+                          <i class="fas fa-arrow-down"></i>
+                          0.5%
+                        </small>
+                        123,234 Sold
+                      </td>
+                      <td>
+                        <a href="javascript:void(0);" class="text-muted">
+                          <i class="fas fa-search"></i>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="dist/img/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
+                        Amazing Product
+                      </td>
+                      <td>$1,230 USD</td>
+                      <td>
+                        <small class="text-danger mr-1">
+                          <i class="fas fa-arrow-down"></i>
+                          3%
+                        </small>
+                        198 Sold
+                      </td>
+                      <td>
+                        <a href="javascript:void(0);" class="text-muted">
+                          <i class="fas fa-search"></i>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="dist/img/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
+                        Perfect Item
+                        <span class="badge bg-danger">NEW</span>
+                      </td>
+                      <td>$199 USD</td>
+                      <td>
+                        <small class="text-success mr-1">
+                          <i class="fas fa-arrow-up"></i>
+                          63%
+                        </small>
+                        87 Sold
+                      </td>
+                      <td>
+                        <a href="javascript:void(0);" class="text-muted">
+                          <i class="fas fa-search"></i>
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- /.card -->
+          </div>
+        </div>
+        <!--/ Row -->
+      </div>
+      <!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+    <div class="p-3">
+      <h5>Title</h5>
+      <p>Sidebar content</p>
+    </div>
+  </aside>
+  <!-- /.control-sidebar -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- To the right -->
+    <div class="float-right d-none d-sm-inline">
+      Anything you want
+    </div>
+    <!-- Default to the left -->
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+</body>
+</html>
