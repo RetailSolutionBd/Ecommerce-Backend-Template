@@ -642,17 +642,19 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
                       <!-- row -->
                       <b class="mt-4">Product</b>
-                      <div class="row mb-3 field_wrapper">
-                        <div class="col-lg-7">
-                            <input type="text" name="field_name[]" class="form-control" placeholder="Product" />
-                        </div>
-                        <div class="col-lg-4">
-                          <input type="number" class="form-control" placeholder="Quantity" />
-                        </div>
-                        <div class="col-lg-1">
-                            <a href="javascript:void(0);" class="btn btn-sm btn-default mt-1 add_button">
-                              <i class="fa fa-plus"></i>
-                            </a>
+                      <div class="mt-2 mb-3 field_wrapper">
+                        <div class="row">
+                          <div class="col-lg-7">
+                              <input type="text" name="field_name[]" class="form-control" placeholder="Product" />
+                          </div>
+                          <div class="col-lg-4">
+                            <input type="number" class="form-control" placeholder="Quantity" />
+                          </div>
+                          <div class="col-lg-1">
+                              <a href="javascript:void(0);" class="btn btn-sm btn-default mt-1 add_button">
+                                <i class="fa fa-plus"></i>
+                              </a>
+                          </div>
                         </div>
                       </div>
                       <!--/ row -->
@@ -821,6 +823,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         var wrapper = $('.field_wrapper'); //Input field wrapper
 
         var fieldHTML = ''; //New input field html       
+        fieldHTML += '<div class="row">';
         fieldHTML += '<div class="col-lg-7 mt-3">';
         fieldHTML += '<input type="text" name="field_name[]" class="form-control" placeholder="Product" />';
         fieldHTML += '</div>';
@@ -829,8 +832,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
         fieldHTML += '</div>';
         fieldHTML += '<div class="col-lg-1 mt-3">';
         fieldHTML += '<a href="javascript:void(0);" class="btn btn-sm btn-danger mt-1 remove_button">';
-        fieldHTML += '<i class="fa fa-plus"></i>';
+        fieldHTML += '<i class="fa fa-trash"></i>';
         fieldHTML += '</a>';
+        fieldHTML += '</div>';
         fieldHTML += '</div>';
 
 
@@ -848,7 +852,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         //Once remove button is clicked
         $(wrapper).on('click', '.remove_button', function (e) {
           e.preventDefault();
-          $(this).parent('div').remove(); //Remove field html
+          $(this).parent().parent('div').remove(); //Remove field html
           x--; //Decrement field counter
         });
       });
