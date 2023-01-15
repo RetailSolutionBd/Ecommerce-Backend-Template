@@ -7,7 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Add Supplier | Backend</title>
+    <title>Add Staff | Backend</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link
@@ -19,10 +19,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
       rel="stylesheet"
       href="../../plugins/fontawesome-free/css/all.min.css"
     />
-
-    <!-- Tagify -->
-    <link href="https://cdn.jsdelivr.net/npm/@yaireo/tagify/dist/tagify.css" rel="stylesheet" type="text/css" />
-
     <!-- Theme style -->
     <link rel="stylesheet" href="../../dist/css/adminlte.min.css" />
   </head>
@@ -561,7 +557,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <div class="container-fluid">
             <div class="row mb-2">
               <div class="col-sm-6">
-                <h1 class="m-0">Add Supplier</h1>
+                <h1 class="m-0">Add Staff</h1>
               </div>
               <!-- /.col -->
               <div class="col-sm-6">
@@ -570,7 +566,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <a href="javascript:void(0);">Home</a>
                   </li>
                   <li class="breadcrumb-item">
-                    <a href="javascript:void(0);">Supplier</a>
+                    <a href="javascript:void(0);">Staff</a>
                   </li>
                   <li class="breadcrumb-item">Add</li>
                 </ol>
@@ -622,24 +618,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <div class="col-lg-6 col-md-12">
                           <!-- text input -->
                           <div class="form-group mb-3">
-                            <label>Company</label>
+                            <label>Designation</label>
                             <input
                               type="text"
-                              class="form-control"
-                              placeholder="Enter ..."
-                            />
-                          </div>
-                          <!--/ text input -->
-                        </div>
-                        <!--/ col -->
-
-                        <!-- col -->
-                        <div class="col-lg-6 col-md-12">
-                          <!-- text input -->
-                          <div class="form-group mb-3">
-                            <label>Email</label>
-                            <input
-                              type="email"
                               class="form-control"
                               placeholder="Enter ..."
                             />
@@ -679,9 +660,77 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <!--/ col -->
                       </div>
                       <!--/ row -->
-
                   </div>
-                </div>               
+                </div>              
+                
+                <div class="card">
+                  <div class="card-header border-0">
+                    <h3 class="card-title">Authentication</h3>
+                    <div class="card-tools">
+                      <a href="javascript:void(0);" class="btn btn-sm btn-tool">
+                        <i class="fas fa-download"></i>
+                      </a>
+                      <a href="javascript:void(0);" class="btn btn-sm btn-tool">
+                        <i class="fas fa-bars"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <!-- row -->
+                    <div class="row">
+                      <!-- col -->
+                      <div class="col-lg-6 col-md-12">
+                        <!-- text input -->
+                        <div class="form-group">
+                          <label>Email</label>
+                          <input
+                            type="email"
+                            class="form-control"
+                            placeholder="Email"
+                          />
+                        </div>
+                        <!--/ text input -->
+                      </div>
+                      <!--/ col -->
+                    </div>
+                    <!--/ row -->                  
+
+
+                    <!-- row -->
+                    <div class="row">
+                      <!-- col -->
+                      <div class="col-lg-6 col-md-12">
+                        <!-- text input -->
+                        <div class="form-group">
+                          <label>Password</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Password"
+                          />
+                        </div>
+                        <!--/ text input -->
+                      </div>
+                      <!--/ col -->
+
+                      <!-- col -->
+                      <div class="col-lg-6 col-md-12">
+                        <!-- text input -->
+                        <div class="form-group">
+                          <label>Re Password</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Re Password"
+                          />
+                        </div>
+                        <!--/ text input -->
+                      </div>
+                      <!--/ col -->
+                    </div>
+                    <!--/ row -->                      
+                  </div>
+                </div>              
                 
                 <div class="card">
                   <div class="card-header border-0">
@@ -760,11 +809,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <!-- Col -->
               <div class="col-xl-3 col-lg-12">
                 <div class="card">
-                  <div class="card-body">  
+                  <div class="card-body">   
                     <div class="form-group">
-                      <label>Products</label>
-                      <input name="basic" class="d-block rounded tagify" placeholder="Tag" value="">
-                    </div>                    
+                      <label>Role</label>           
+                      <select name="" class="form-control" id="">
+                        <option value="CEO">CEO</option>
+                        <option value="Admin">Admin</option>
+                        <option value="Developer">Developer</option>
+                        <option value="Sales Executive">Sales Executive</option>
+                        <option value="Manager">Manager</option>
+                        <option value="Executive">Executive</option>
+                      </select>
+                    </div>
                   </div>
                 </div>
 
@@ -792,11 +848,23 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     </div>
                   </div>
                 </div>
+
+                <div class="card">
+                  <div class="card-header border-0">
+                    <h3 class="card-title">Attachment</h3>
+                  </div>
+                  <div class="card-body">          
+                    <div class="custom-file mb-3">
+                      <input type="file" class="custom-file-input" id="cv_input" name="filename">
+                      <label class="custom-file-label" for="cv_input">Choose file</label>
+                    </div>
+                  </div>
+                </div>
               </div>
               <!--/ Col -->
-
+              
               <!-- Col -->
-              <div class="col-xl-3 col-lg-12">
+              <div class="col-xl-3 col-lg-12">                
                 <div class="card">
                   <div class="card-body">
                     <button type="submit" class="btn bg-info rounded-pill">Submit</button>
@@ -804,6 +872,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </div>
               </div>
               <!--/ Col -->
+
             </div>
             <!--/ Row -->
             </form>
@@ -847,46 +916,35 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- AdminLTE App -->
     <script src="../../dist/js/adminlte.min.js"></script>
 
-    <!-- Custom File Input -->     
-    <script>
-    $(function () {
-      $("#image_input").on("change", function () {
-        // Image Upload Preview
-        const file = this.files[0];
-        console.log(file);
-        if (file) {
-          let reader = new FileReader();
-          reader.onload = function (event) {
-            console.log(event.target.result);
-            $('#image_preview').attr('src', event.target.result);
+     <!-- Custom File Input -->     
+     <script>
+      $(function () {
+        $("#image_input").on("change", function () {
+          // Image Upload Preview
+          const file = this.files[0];
+          console.log(file);
+          if (file) {
+            let reader = new FileReader();
+            reader.onload = function (event) {
+              console.log(event.target.result);
+              $('#image_preview').attr('src', event.target.result);
+            }
+            reader.readAsDataURL(file);
           }
-          reader.readAsDataURL(file);
-        }
 
-        // Image Upload Input Show File Name
-        var fileName = $(this).val().split("\\").pop();
-        $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+          // Image Upload Input Show File Name
+          var fileName = $(this).val().split("\\").pop();
+          $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+        });
+
+        // CV
+        $("#cv_input").on("change", function () {
+          // Image Upload Input Show File Name
+          var filesName = $(this).val().split("\\").pop();
+          $(this).siblings(".custom-file-label").addClass("selected").html(filesName);
+        });        
       });
-
-      // Additional Images 
-      $("#additional_images_input").on("change", function () {
-        // Image Upload Input Show File Name
-        var filesName = $(this).val().split("\\").pop();
-        $(this).siblings(".custom-file-label").addClass("selected").html(filesName);
-      });        
-    });
-    </script>
-    <!--/ Custom File Input -->
-
-    <!-- Tagify -->     
-    <script src="https://cdn.jsdelivr.net/npm/@yaireo/tagify"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@yaireo/tagify/dist/tagify.polyfills.min.js"></script>
-    <script>
-      // The DOM element you wish to replace with Tagify
-      var tagify_input = document.querySelector(".tagify");
-      // initialize Tagify on the above input node reference
-      new Tagify(tagify_input)
-    </script>
-    <!--/ Tagify -->
+     </script>
+     <!--/ Custom File Input -->
   </body>
 </html>

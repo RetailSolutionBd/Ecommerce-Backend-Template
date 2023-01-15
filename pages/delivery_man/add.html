@@ -19,22 +19,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
       rel="stylesheet"
       href="../../plugins/fontawesome-free/css/all.min.css"
     />
-    <!-- summernote -->
-    <link rel="stylesheet" href="../../plugins/summernote/summernote-bs4.min.css">
-    <style>
-      .note-editor { box-shadow: none !important; }
-    </style>
-    
-    <!-- Select2 -->
-    <link rel="stylesheet" href="../../plugins/select2/css/select2.min.css">
-    <link rel="stylesheet" href="../../plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
-
-    <!-- iCheck for checkboxes and radio inputs -->
-    <link rel="stylesheet" href="../../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-
-    <!-- Tagify -->
-    <link href="https://cdn.jsdelivr.net/npm/@yaireo/tagify/dist/tagify.css" rel="stylesheet" type="text/css" />
-
     <!-- Theme style -->
     <link rel="stylesheet" href="../../dist/css/adminlte.min.css" />
   </head>
@@ -794,15 +778,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <!-- Col -->
               <div class="col-xl-3 col-lg-12">
                 <div class="card">
-                  <div class="card-body">  
-                    <div class="form-group">
-                      <label>Products</label>
-                      <input name="basic" class="d-block rounded tagify" placeholder="Tag" value="">
-                    </div>                    
-                  </div>
-                </div>
-
-                <div class="card">
                   <div class="card-body">   
                     <div class="form-group">
                       <label>Status</label>           
@@ -826,11 +801,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     </div>
                   </div>
                 </div>
-              </div>
-              <!--/ Col -->
-
-              <!-- Col -->
-              <div class="col-xl-3 col-lg-12">
+                
                 <div class="card">
                   <div class="card-body">
                     <button type="submit" class="btn bg-info rounded-pill">Submit</button>
@@ -881,35 +852,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- AdminLTE App -->
     <script src="../../dist/js/adminlte.min.js"></script>
 
-    <!-- Summernote -->
-    <script src="../../plugins/summernote/summernote-bs4.min.js"></script>    
-    <script>
-      $(function () {
-        // Summernote
-        $('#summernote').summernote({
-          height: 350, 
-          toolbar: [
-            ['style', ['bold', 'italic', 'underline', 'clear']],
-            ['font', ['strikethrough', 'superscript', 'subscript']],
-            ['fontsize', ['fontsize']],
-            ['color', ['color']],
-            ['para', ['ul', 'ol', 'paragraph']],
-            ['height', ['height']]
-          ]
-        })
-      })
-    </script>
-    <!--/ Summernote -->
-
-    <!-- Select2 -->
-    <script src="../../plugins/select2/js/select2.full.min.js"></script>
-    <script>
-      $(function () {
-        //Initialize Select2 Elements
-        $('.select2').select2();
-      });
-    </script>
-
      <!-- Custom File Input -->     
      <script>
       $(function () {
@@ -940,16 +882,5 @@ scratch. This page gets rid of all links and provides the needed markup only.
       });
      </script>
      <!--/ Custom File Input -->
-
-    <!-- Tagify -->     
-    <script src="https://cdn.jsdelivr.net/npm/@yaireo/tagify"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@yaireo/tagify/dist/tagify.polyfills.min.js"></script>
-    <script>
-      // The DOM element you wish to replace with Tagify
-      var tagify_input = document.querySelector(".tagify");
-      // initialize Tagify on the above input node reference
-      new Tagify(tagify_input)
-    </script>
-    <!--/ Tagify -->
   </body>
 </html>
