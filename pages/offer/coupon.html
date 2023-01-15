@@ -7,7 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Delivery Man | Backend</title>
+  <title>Offer | Backend</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -30,7 +30,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <a href="index3.html" class="nav-link">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="javascript:void(0);" class="nav-link">Contact</a>
+        <a href="javascript:void(0);" class="nav-link">Offer</a>
       </li>
     </ul>
 
@@ -467,14 +467,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Supplier</h1>
+            <h1 class="m-0">Offer</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item">
                 <a href="javascript:void(0);">Home</a>
               </li>
-              <li class="breadcrumb-item">Supplier</li>
+              <li class="breadcrumb-item">Offer</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -487,6 +487,77 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="container-fluid">
         <!-- Row -->
         <div class="row mt-4">
+          <!-- col -->
+          <div class="col-lg-4 col-md-12">
+            <div class="card mb-4">
+              <div class="card-header border-0">
+                <h3 class="card-title">Details</h3>
+                <div class="card-tools">
+                  <a href="javascript:void(0);" class="btn btn-sm btn-tool">
+                    <i class="fas fa-download"></i>
+                  </a>
+                  <a href="javascript:void(0);" class="btn btn-sm btn-tool">
+                    <i class="fas fa-bars"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body">
+                <!-- row -->
+                <div class="row">
+                  <!-- col -->
+                  <div class="col">
+                    <!-- text input -->
+                    <div class="form-group mb-3">
+                      <label>Start</label>
+                      <input type="datetime-local" class="form-control" placeholder="Enter ..." />
+                    </div>
+                    <!--/ text input -->
+                  </div>
+                  <!--/ col -->
+      
+                  <!-- col -->
+                  <div class="col">
+                    <!-- text input -->
+                    <div class="form-group mb-3">
+                      <label>End</label>
+                      <input type="datetime-local" class="form-control" placeholder="Enter ..." />
+                    </div>
+                    <!--/ text input -->
+                  </div>
+                  <!--/ col -->
+                </div>
+                <!--/ row -->
+      
+                <!-- row -->
+                <div class="mt-2 mb-3 field_wrapper">
+                  <div class="row">
+                    <div class="col-lg-8">
+                      <input type="text" name="field_name" class="form-control" placeholder="Code" />
+                    </div>
+                    <div class="col-lg-4">
+                      <input type="number" class="form-control" placeholder="Value(%)" />
+                    </div>
+                  </div>
+                </div>
+                <!--/ row -->
+
+                <!-- Select -->
+                <div class="form-group">
+                  <label>Type</label>
+                  <select class="form-control" name="" id="">
+                    <option value="Discount">Discount</option>
+                    <option value="Cashback">Cashback</option>
+                  </select>
+                </div>
+                <!--/ Select -->
+
+                <button type="submit" class="btn bg-info rounded-pill mt-4">Submit</button>
+              </div>
+            </div>
+          </div>
+          <!--/ col -->
+
+          <!-- col -->
           <div class="col-lg-12">
             <div class="card">
               <div class="card-header border-0">
@@ -504,88 +575,27 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <table class="table">
                     <thead>
                         <tr>
-                            <th style="width: 10px">#</th>
-                            <th style="width: 150px">Title</th>
-                            <th style="width: 150px">Slug</th>
-                            <th>Description</th>
-                            <th style="width: 40px">Label</th>
-                            <th>Action</th>
+                            <th>Date</th>
+                            <th>Code</th>
+                            <th>Amount</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>1.</td>
-                            <td>Update software</td>
-                            <td>Update software</td>
-                            <td>
-                                Lorem ipsum dolor sit amet consectetur adipiscing elit, libero parturient ligula ultrices gravida sociosqu nullam, imperdiet maecenas id in natoque sodales.
-                            </td>
-                            <td><span class="badge bg-danger">55%</span></td>
-                            <td>
-                                <a href="#" class="btn btn-sm btn-warning mx-1">
-                                    <i class="fa fa-pencil-alt"></i>
-                                </a>
-                                <a href="#" class="btn btn-sm btn-danger mx-1">
-                                    <i class="fa fa-trash"></i>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2.</td>
-                            <td>Clean database</td>
-                            <td>Update software</td>
-                            <td>
-                                Lorem ipsum dolor sit amet consectetur adipiscing elit, libero parturient ligula ultrices gravida sociosqu nullam, imperdiet maecenas id in natoque sodales.
-                            </td>
-                            <td><span class="badge bg-warning">70%</span></td>
-                            <td>
-                                <a href="#" class="btn btn-sm btn-warning mx-1">
-                                    <i class="fa fa-pencil-alt"></i>
-                                </a>
-                                <a href="#" class="btn btn-sm btn-danger mx-1">
-                                    <i class="fa fa-trash"></i>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>3.</td>
-                            <td>Cron job running</td>
-                            <td>Update software</td>
-                            <td>
-                                Lorem ipsum dolor sit amet consectetur adipiscing elit, libero parturient ligula ultrices gravida sociosqu nullam, imperdiet maecenas id in natoque sodales.
-                            </td>
-                            <td><span class="badge bg-primary">30%</span></td>
-                            <td>
-                                <a href="#" class="btn btn-sm btn-warning mx-1">
-                                    <i class="fa fa-pencil-alt"></i>
-                                </a>
-                                <a href="#" class="btn btn-sm btn-danger mx-1">
-                                    <i class="fa fa-trash"></i>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>4.</td>
-                            <td>Fix and squish bugs</td>
-                            <td>Update software</td>
-                            <td>
-                                Lorem ipsum dolor sit amet consectetur adipiscing elit, libero parturient ligula ultrices gravida sociosqu nullam, imperdiet maecenas id in natoque sodales.
-                            </td>
-                            <td><span class="badge bg-success">90%</span></td>
-                            <td>
-                                <a href="#" class="btn btn-sm btn-warning mx-1">
-                                    <i class="fa fa-pencil-alt"></i>
-                                </a>
-                                <a href="#" class="btn btn-sm btn-danger mx-1">
-                                    <i class="fa fa-trash"></i>
-                                </a>
-                            </td>
-                        </tr>
+                      <tr>
+                        <td>
+                          15-01-23
+                        </td>
+                        <td>TP-542</td>
+                        <td>
+                          120/=
+                        </td>
+                      </tr>
                     </tbody>
                 </table>
               </div>
             </div>
           </div>
+          <!--/ col -->
         </div>
         <!--/ Row -->
       </div>
