@@ -7,7 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Coupon | Backend</title>
+  <title>Offer | Backend</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -30,7 +30,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <a href="index3.html" class="nav-link">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="javascript:void(0);" class="nav-link">Coupon</a>
+        <a href="javascript:void(0);" class="nav-link">Offer</a>
       </li>
     </ul>
 
@@ -467,14 +467,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Coupon</h1>
+            <h1 class="m-0">Offer</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item">
                 <a href="javascript:void(0);">Home</a>
               </li>
-              <li class="breadcrumb-item">Coupon</li>
+              <li class="breadcrumb-item">Offer</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -527,29 +527,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <!--/ col -->
                 </div>
                 <!--/ row -->
-      
-                <!-- row -->
-                <div class="mt-2 mb-3 field_wrapper">
-                  <div class="row">
-                    <div class="col-lg-8">
-                      <input type="text" name="field_name" class="form-control" placeholder="Code" />
-                    </div>
-                    <div class="col-lg-4">
-                      <input type="number" class="form-control" placeholder="Value(%)" />
-                    </div>
+
+                <div class="form-group mb-3">
+                  <label>Image</label>
+                  <div class="custom-file mb-3">
+                    <input type="file" class="custom-file-input" id="image_input" name="filename">
+                    <label class="custom-file-label" for="image_input">Choose file</label>
                   </div>
                 </div>
-                <!--/ row -->
-
-                <!-- Select -->
-                <div class="form-group">
-                  <label>Type</label>
-                  <select class="form-control" name="" id="">
-                    <option value="Discount">Discount</option>
-                    <option value="Cashback">Cashback</option>
-                  </select>
-                </div>
-                <!--/ Select -->
 
                 <button type="submit" class="btn bg-info rounded-pill mt-4">Submit</button>
               </div>
@@ -635,5 +620,17 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
 <script src="../../dist/js/adminlte.min.js"></script>
+
+<!-- Custom File Input -->
+<script>
+ $(function () {
+   $("#image_input").on("change", function () {
+     // Image Upload Input Show File Name
+     var fileName = $(this).val().split("\\").pop();
+     $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+   });
+ });
+</script>
+<!--/ Custom File Input -->
 </body>
 </html>
