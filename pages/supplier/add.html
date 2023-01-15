@@ -102,7 +102,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <!-- Message Start -->
                 <div class="media">
                   <img
-                    src="dist/img/user1-128x128.jpg"
+                    src="../../dist/img/user1-128x128.jpg"
                     alt="User Avatar"
                     class="img-size-50 mr-3 img-circle"
                   />
@@ -126,7 +126,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <!-- Message Start -->
                 <div class="media">
                   <img
-                    src="dist/img/user8-128x128.jpg"
+                    src="../../dist/img/user8-128x128.jpg"
                     alt="User Avatar"
                     class="img-size-50 img-circle mr-3"
                   />
@@ -150,7 +150,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <!-- Message Start -->
                 <div class="media">
                   <img
-                    src="dist/img/user3-128x128.jpg"
+                    src="../../dist/img/user3-128x128.jpg"
                     alt="User Avatar"
                     class="img-size-50 img-circle mr-3"
                   />
@@ -237,324 +237,310 @@ scratch. This page gets rid of all links and provides the needed markup only.
       </nav>
       <!-- /.navbar -->
 
-      <!-- Main Sidebar Container -->
-      <aside class="main-sidebar sidebar-light-maroon elevation-2">
-        <!-- Brand Logo -->
-        <a href="index3.html" class="brand-link">
-          <img
-            src="../../dist/img/AdminLTELogo.png"
-            alt="AdminLTE Logo"
-            class="brand-image img-circle elevation-2"
-            style="opacity: 0.8"
-          />
-          <span class="brand-text font-weight-light">AdminLTE 3</span>
-        </a>
+       <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-light-maroon elevation-2">
+    <!-- Brand Logo -->
+    <a href="index3.html" class="brand-link">
+      <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-2" style="opacity: .8">
+      <span class="brand-text font-weight-light">AdminLTE 3</span>
+    </a>
 
-        <!-- Sidebar -->
-        <div class="sidebar">
-          <!-- Sidebar user panel (optional) -->
-          <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-            <div class="image">
-              <img
-                src="../../dist/img/user1-128x128.jpg"
-                class="img-circle elevation-2"
-                alt="User Image"
-              />
-            </div>
-            <div class="info">
-              <a href="javascript:void(0);" class="d-block">Alexander Pierce</a>
-            </div>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="../../dist/img/user1-128x128.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="javascript:void(0);" class="d-block">Alexander Pierce</a>
+        </div>
+      </div>
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
           </div>
+        </div>
+      </div>
 
-          <!-- SidebarSearch Form -->
-          <div class="form-inline">
-            <div class="input-group" data-widget="sidebar-search">
-              <input
-                class="form-control form-control-sidebar"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <div class="input-group-append">
-                <button class="btn btn-sidebar">
-                  <i class="fas fa-search fa-fw"></i>
-                </button>
-              </div>
-            </div>
-          </div>
+      <!-- Sidebar Menu -->
+      <nav class="mt-2 text-sm">
+        <ul class="nav nav-pills nav-sidebar flex-column nav-legacy" data-widget="treeview" role="menu" data-accordion="false">         
+          <!-- Dashboard -->
+          <li class="nav-item my-1">
+            <a href="../../index.html" class="nav-link">
+              <i class="nav-icon text-sm fas fa-border-style"></i>
+              <p>
+                Dashboard
+              </p>
+            </a>
+          </li>
+          <!--/ Dashboard -->
+          
+          <!-- Pages -->
+          <li class="nav-item my-1">
+            <a href="../page/add.html" class="nav-link">
+              <i class="nav-icon text-sm fas fa-sticky-note"></i>
+              <p>Pages</p>
+            </a>
+          </li>
+          <!--/ Pages -->
 
-          <!-- Sidebar Menu -->
-          <nav class="mt-2 text-sm">
-            <ul
-              class="nav nav-pills nav-sidebar flex-column nav-legacy"
-              data-widget="treeview"
-              role="menu"
-              data-accordion="false"
-            >
-              <!-- Dashboard -->
-              <li class="nav-item my-1">
-                <a href="javascript:void(0);" class="nav-link active">
-                  <i class="nav-icon text-sm fas fa-border-style"></i>
-                  <p>Dashboard</p>
+          <!-- Ecommerce -->
+          <li class="nav-header mt-2">Ecommerce</li>
+          <!-- Category -->
+          <li class="nav-item  my-2">
+            <a href="javascript:void(0);" class="nav-link">
+              <i class="nav-icon text-sm fas fa-clipboard-list"></i>
+              <p>
+                Category
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../category/add.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Category</p>
                 </a>
               </li>
-              <!--/ Dashboard -->
-
-              <!-- Pages -->
-              <li class="nav-item my-1">
-                <a href="javascript:void(0);" class="nav-link">
-                  <i class="nav-icon text-sm fas fa-sticky-note"></i>
-                  <p>Pages</p>
+              <li class="nav-item">
+                <a href="../child_category/add.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Child Category</p>
                 </a>
               </li>
-              <!--/ Pages -->
+            </ul>
+          </li>
+          <!--/ Category -->
 
-              <!-- Ecommerce -->
-              <li class="nav-header mt-2">Ecommerce</li>
-              <!-- Category -->
-              <li class="nav-item my-1">
-                <a href="javascript:void(0);" class="nav-link">
-                  <i class="nav-icon text-sm fas fa-clipboard-list"></i>
-                  <p>
-                    Category
-                    <i class="right fas fa-angle-left"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="javascript:void(0);" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Category</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="javascript:void(0);" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Child Category</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <!--/ Category -->
+          <!-- Brand -->
+          <li class="nav-item  my-2">
+            <a href="../brand/add.html" class="nav-link">
+              <i class="nav-icon text-sm fas fa-dice-d6"></i>
+              <p>Brand</p>
+            </a>
+          </li>
+          <!--/ Brand -->
 
-              <!-- Brand -->
-              <li class="nav-item my-1">
-                <a href="javascript:void(0);" class="nav-link">
-                  <i class="nav-icon text-sm fas fa-dice-d6"></i>
-                  <p>Brand</p>
-                </a>
-              </li>
-              <!--/ Brand -->
+          <!-- Unit -->
+          <li class="nav-item  my-2">
+            <a href="../unit/add.html" class="nav-link">
+              <i class="nav-icon text-sm fas fa-drafting-compass"></i>
+              <p>Unit</p>
+            </a>
+          </li>
+          <!--/ Unit -->
 
-              <!-- Unit -->
-              <li class="nav-item my-1">
-                <a href="javascript:void(0);" class="nav-link">
-                  <i class="nav-icon text-sm fas fa-drafting-compass"></i>
-                  <p>Unit</p>
-                </a>
-              </li>
-              <!--/ Unit -->
+          <!-- Product -->
+          <li class="nav-item  my-2">
+            <a href="../product/add.html" class="nav-link">
+              <i class="nav-icon text-sm fas fa-scroll"></i>
+              <p>Product</p>
+            </a>
+          </li>
+          <!--/ Product -->
 
-              <!-- Product -->
-              <li class="nav-item my-1">
-                <a href="javascript:void(0);" class="nav-link">
-                  <i class="nav-icon text-sm fas fa-scroll"></i>
-                  <p>Product</p>
+          <!-- Purchase -->
+          <li class="nav-item  my-2">
+            <a href="javascript:void(0);" class="nav-link">
+              <i class="nav-icon text-sm fas fa-calculator"></i>
+              <p>
+                Purchase
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../purchase/add.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Purchase</p>
                 </a>
               </li>
-              <!--/ Product -->
-
-              <!-- Purchase -->
-              <li class="nav-item my-1">
-                <a href="javascript:void(0);" class="nav-link">
-                  <i class="nav-icon text-sm fas fa-calculator"></i>
-                  <p>
-                    Purchase
-                    <i class="right fas fa-angle-left"></i>
-                  </p>
+              <li class="nav-item">
+                <a href="../purchase/return.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Return Purchase</p>
                 </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="javascript:void(0);" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Purchase</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="javascript:void(0);" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Return Purchase</p>
-                    </a>
-                  </li>
-                </ul>
               </li>
-              <!--/ Purchase -->
+            </ul>
+          </li>
+          <!--/ Purchase -->
 
-              <!-- Inventory -->
-              <li class="nav-item my-1">
-                <a href="javascript:void(0);" class="nav-link">
-                  <i class="nav-icon text-sm fas fa-archive"></i>
-                  <p>
-                    Inventory
-                    <i class="right fas fa-angle-left"></i>
-                  </p>
+          <!-- Inventory -->
+          <li class="nav-item  my-2">
+            <a href="javascript:void(0);" class="nav-link">
+              <i class="nav-icon text-sm fas fa-archive"></i>
+              <p>
+                Inventory
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../inventory/list.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>In Stock</p>
                 </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="javascript:void(0);" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>In Stock</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="javascript:void(0);" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Out of Stock</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="javascript:void(0);" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Damaged Product</p>
-                    </a>
-                  </li>
-                </ul>
               </li>
-              <!--/ Inventory -->
+              <li class="nav-item">
+                <a href="../inventory/list.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Out of Stock</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../inventory/damaged.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Damaged Product</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!--/ Inventory -->
 
-              <!-- Order -->
-              <li class="nav-item my-1">
-                <a href="javascript:void(0);" class="nav-link">
-                  <i class="nav-icon text-sm fas fa-shopping-bag"></i>
+          <!-- Order -->
+          <li class="nav-item  my-2">
+            <a href="javascript:void(0);" class="nav-link">
+              <i class="nav-icon text-sm fas fa-shopping-bag"></i>
+              <p>
+                Order
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../order/add.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
                   <p>
                     Order
-                    <i class="right fas fa-angle-left"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="javascript:void(0);" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Order</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="javascript:void(0);" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Return Order</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <!--/ Order -->
-
-              <!-- Adjustment -->
-              <li class="nav-item my-1">
-                <a href="javascript:void(0);" class="nav-link">
-                  <i class="nav-icon text-sm fas fa-exchange-alt"></i>
-                  <p>Adjustment</p>
-                </a>
-              </li>
-              <!--/ Adjustment -->
-
-              <!-- Coupon -->
-              <li class="nav-item my-1">
-                <a href="javascript:void(0);" class="nav-link">
-                  <i class="nav-icon text-sm fas fa-percent"></i>
-                  <p>Coupon</p>
-                </a>
-              </li>
-              <!--/ Coupon -->
-
-              <!-- Offer -->
-              <li class="nav-item my-1">
-                <a href="javascript:void(0);" class="nav-link">
-                  <i class="nav-icon text-sm fas fa-gift"></i>
-                  <p>Offer</p>
-                </a>
-              </li>
-              <!--/ Offer -->
-              <!--/ Ecommerce -->
-
-              <!-- People -->
-              <li class="nav-header mt-2">People</li>
-              <!-- Supplier -->
-              <li class="nav-item my-1">
-                <a href="javascript:void(0);" class="nav-link">
-                  <i class="nav-icon text-sm fas fa-shipping-fast"></i>
-                  <p>
-                    Supplier
-                    <span class="right badge badge-danger">New</span>
                   </p>
                 </a>
               </li>
-              <!--/ Supplier -->
-
-              <!-- Delivery man -->
-              <li class="nav-item my-1">
-                <a href="javascript:void(0);" class="nav-link">
-                  <i class="nav-icon text-sm fas fa-biking"></i>
-                  <p>Delivery man</p>
+              <li class="nav-item">
+                <a href="../order/return.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Return Order</p>
                 </a>
               </li>
-              <!--/ Delivery man -->
-
-              <!-- Staff -->
-              <li class="nav-item my-1">
-                <a href="javascript:void(0);" class="nav-link">
-                  <i class="nav-icon text-sm fas fa-id-badge"></i>
-                  <p>Staff</p>
-                </a>
-              </li>
-              <!--/ Staff -->
-
-              <!-- Admin -->
-              <li class="nav-item my-1">
-                <a href="javascript:void(0);" class="nav-link">
-                  <i class="nav-icon text-sm fas fa-user-tie"></i>
-                  <p>Admin</p>
-                </a>
-              </li>
-              <!--/ Admin -->
-              <!--/ People -->
-
-              <!-- Maintenance -->
-              <li class="nav-header mt-2">Maintenance</li>
-              <!-- Delivery -->
-              <li class="nav-item my-1">
-                <a href="javascript:void(0);" class="nav-link">
-                  <i class="nav-icon text-sm fas fa-biking"></i>
-                  <p>Delivery</p>
-                </a>
-              </li>
-              <!--/ Delivery -->
-
-              <!-- Role & Permission -->
-              <li class="nav-item my-1">
-                <a href="javascript:void(0);" class="nav-link">
-                  <i class="nav-icon text-sm fas fa-shield-alt"></i>
-                  <p>Role & Permission</p>
-                </a>
-              </li>
-              <!--/ Role & Permission -->
-
-              <!-- Setting -->
-              <li class="nav-item my-1">
-                <a href="javascript:void(0);" class="nav-link">
-                  <i class="nav-icon text-sm fas fa-wrench"></i>
-                  <p>Setting</p>
-                </a>
-              </li>
-              <!--/ Setting -->
-              <!--/ Maintenance -->
             </ul>
-          </nav>
-          <!-- /.sidebar-menu -->
-        </div>
-        <!-- /.sidebar -->
-      </aside>
+          </li>
+          <!--/ Order -->
 
-      <!-- Content Wrapper. Contains page content -->
+          <!-- Adjustment -->
+          <li class="nav-item  my-2">
+            <a href="../adjustment/adjustment.html" class="nav-link">
+              <i class="nav-icon text-sm fas fa-exchange-alt"></i>
+              <p>Adjustment</p>
+            </a>
+          </li>
+          <!--/ Adjustment -->
+
+          <!-- Coupon -->
+          <li class="nav-item  my-2">
+            <a href="../coupon/coupon.html" class="nav-link">
+              <i class="nav-icon text-sm fas fa-percent"></i>
+              <p>Coupon</p>
+            </a>
+          </li>
+          <!--/ Coupon -->
+
+          <!-- Offer -->
+          <li class="nav-item  my-2">
+            <a href="../offer/offer.html" class="nav-link">
+              <i class="nav-icon text-sm fas fa-gift"></i>
+              <p>Offer</p>
+            </a>
+          </li>
+          <!--/ Offer -->
+          <!--/ Ecommerce -->
+
+          <!-- People -->
+          <li class="nav-header mt-2">People</li>
+          <!-- Supplier -->
+          <li class="nav-item  my-2">
+            <a href="../supplier/add.html" class="nav-link">
+              <i class="nav-icon text-sm fas fa-shipping-fast"></i>
+              <p>
+                Supplier
+                <span class="right badge badge-danger">New</span>
+              </p>
+            </a>
+          </li>
+          <!--/ Supplier -->
+
+          <!-- Delivery man -->
+          <li class="nav-item  my-2">
+            <a href="../delivery_man/add.html" class="nav-link">
+              <i class="nav-icon text-sm fas fa-biking"></i>
+              <p>Delivery man</p>
+            </a>
+          </li>
+          <!--/ Delivery man -->
+
+          <!-- Staff -->
+          <li class="nav-item  my-2">
+            <a href="../staff/add.html" class="nav-link">
+              <i class="nav-icon text-sm fas fa-id-badge"></i>
+              <p>Staff</p>
+            </a>
+          </li>
+          <!--/ Staff -->
+
+          <!-- Admin -->
+          <li class="nav-item  my-2">
+            <a href="../admin/add.html" class="nav-link">
+              <i class="nav-icon text-sm fas fa-user-tie"></i>
+              <p>Admin</p>
+            </a>
+          </li>
+          <!--/ Admin -->
+          <!--/ People -->          
+
+          <!-- Maintenance -->
+          <li class="nav-header mt-2">Maintenance</li>
+          <!-- Delivery -->
+          <li class="nav-item  my-2">
+            <a href="../delivery_man/add.html" class="nav-link">
+              <i class="nav-icon text-sm fas fa-biking"></i>
+              <p>Delivery</p>
+            </a>
+          </li>
+          <!--/ Delivery -->
+
+          
+          <!-- Role & Permission -->
+          <li class="nav-item  my-2">
+            <a href="javascript:void(0);" class="nav-link">
+              <i class="nav-icon text-sm fas fa-shield-alt"></i>
+              <p>Role & Permission</p>
+            </a>
+          </li>
+          <!--/ Role & Permission -->
+
+          <!-- Setting -->
+          <li class="nav-item  my-2">
+            <a href="javascript:void(0);" class="nav-link">
+              <i class="nav-icon text-sm fas fa-wrench"></i>
+              <p>Setting</p>
+            </a>
+          </li>
+          <!--/ Setting -->
+          <!--/ Maintenance -->
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+      
+	  <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <div class="content-header">
