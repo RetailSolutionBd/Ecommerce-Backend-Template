@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Default Page List | E-Commerce</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  
+  <!-- Bootstrap Icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+  
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+  <div class="wrapper">
+
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="index3.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="#" class="nav-link">Contact</a>
+        </li>
+      </ul>
+
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+        <!-- Messages Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="far fa-comments"></i>
+            <span class="badge badge-danger navbar-badge">3</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <a href="#" class="dropdown-item">
+              <!-- Message Start -->
+              <div class="media">
+                <img src="../../dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    Brad Diesel
+                    <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                  </h3>
+                  <p class="text-sm">Call me whenever you can...</p>
+                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                </div>
+              </div>
+              <!-- Message End -->
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <!-- Message Start -->
+              <div class="media">
+                <img src="../../dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    John Pierce
+                    <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                  </h3>
+                  <p class="text-sm">I got your message bro</p>
+                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                </div>
+              </div>
+              <!-- Message End -->
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <!-- Message Start -->
+              <div class="media">
+                <img src="../../dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    Nora Silvester
+                    <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                  </h3>
+                  <p class="text-sm">The subject goes here</p>
+                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                </div>
+              </div>
+              <!-- Message End -->
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+          </div>
+        </li>
+
+        <!-- Notifications Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="far fa-bell"></i>
+            <span class="badge badge-warning navbar-badge">15</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <span class="dropdown-header">15 Notifications</span>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-envelope mr-2"></i> 4 new messages
+              <span class="float-right text-muted text-sm">3 mins</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-users mr-2"></i> 8 friend requests
+              <span class="float-right text-muted text-sm">12 hours</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-file mr-2"></i> 3 new reports
+              <span class="float-right text-muted text-sm">2 days</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+            <i class="fas fa-expand-arrows-alt"></i>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+            <i class="fas fa-th-large"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4 sidebar-no-expand">
+      <!-- Brand Logo -->
+      <a href="index3.html" class="brand-link">
+        <img src="../../dist/img/AdminLTELogo.png" alt="eCommerce Logo" class="brand-image img-circle elevation-3"
+          style="opacity: .8">
+        <span class="brand-text font-weight-light">E-Commerce</span>
+      </a>
+
+      <!-- Sidebar -->
+      <div class="sidebar text-sm">
+        <!-- Sidebar Form -->
+        <div class="form-inline my-3">
+          <div class="input-group" data-widget="sidebar-search">
+            <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+            <div class="input-group-append">
+              <button class="btn btn-sidebar">
+                <i class="fas fa-search fa-fw"></i>
+              </button>
+            </div>
+          </div>
+          <div class="sidebar-search-results">
+            <div class="list-group">
+              <a href="#" class="list-group-item">
+                <div class="search-title">
+                  <strong class="text-light"></strong>N
+                  <strong class="text-light"></strong>o
+                  <strong class="text-light"></strong>
+                  <strong class="text-light"></strong>e
+                  <strong class="text-light"></strong>l
+                  <strong class="text-light"></strong>e
+                  <strong class="text-light"></strong>m
+                  <strong class="text-light"></strong>e
+                  <strong class="text-light"></strong>n
+                  <strong class="text-light"></strong>t
+                  <strong class="text-light"></strong>
+                  <strong class="text-light"></strong>f
+                  <strong class="text-light"></strong>o
+                  <strong class="text-light"></strong>u
+                  <strong class="text-light"></strong>n
+                  <strong class="text-light"></strong>d
+                  <strong class="text-light"></strong>!
+                  <strong class="text-light"></strong>
+                </div>
+                <div class="search-path"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!--/ Sidebar Form -->
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column nav-child-indent nav-legacy" data-widget="treeview"
+            role="menu" data-accordion="false">
+            <!-- Dashboard -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon bi bi-columns-gap"></i>
+                <p>Dashboard</p>
+              </a>
+            </li>
+            <!--/ Dashboard -->
+
+            <!-- Page -->
+            <li class="nav-item menu-open">
+              <a href="#" class="nav-link">
+                <i class="nav-icon bi bi-file-richtext"></i>
+                <p>
+                  Page
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Add Page</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1 active">                  
+                    <p>Default Page List</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Page List</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!--/ Page -->
+
+            <!-- Blog -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon bi bi-file-font"></i>
+                <p>
+                  Blog
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Add Blog</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Blog List</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Category</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!--/ Blog -->
+
+            <!-- Advertisement -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon bi bi-badge-ad"></i>
+                <p>AD</p>
+              </a>
+            </li>
+            <!--/ Advertisement -->
+
+            <!-- FAQ -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon bi bi-question-circle"></i>
+                <p>
+                  FAQ
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Add FAQ</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>FAQ List</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Category</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!--/ FAQ -->
+
+            <!-- Heading -->
+            <li class="nav-header mt-3">Ecommerce</li>
+            <!--/ Heading -->
+
+            <!-- Product -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon bi bi-box"></i>
+                <p>
+                  Product
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Add Product</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Product List</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Category</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Variation</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Brand</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Unit</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Print Labels</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!--/ Product -->
+
+            <!-- Purchase -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-luggage-cart"></i>
+                <p>
+                  Purchase
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Add Purchase</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Purchase List</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Purchase Return List</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!--/ Purchase -->
+
+            <!-- Sale -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon bi bi-lightning-charge"></i>
+                <p>
+                  Sale
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Add Sale</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Sale List</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Sale Return List</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!--/ Sale -->
+
+            <!-- Wearhouse -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon bi bi-house-gear"></i>
+                <p>
+                  Wearhouse
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Add Wearhouse</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Wearhouse List</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!--/ Wearhouse -->
+
+            <!-- Inventory -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon bi bi-boxes"></i>
+                <p>Inventory</p>
+              </a>
+            </li>
+            <!--/ Inventory -->
+
+            <!-- Stock Transfer -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon bi bi-arrow-left-right"></i>
+                <p>
+                  Stock Transfer
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Add Stock Transfer</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Stock Transfer List</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!--/ Stock Transfer -->
+
+            <!-- Stock Adjustment -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon bi bi-body-text"></i>
+                <p>
+                  Stock Adjustment
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Add Stock Adjustment</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Stock Adjustment List</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!--/ Stock Adjustment -->
+
+            <!-- Shipment -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-shipping-fast"></i>
+                <p>
+                  Shipment
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Add Area & Charge</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Area & Charge List</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Add Delivery Boy</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Delivery Boy List</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Add Courier Service</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Courier Service List</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!--/ Shipment -->
+
+            <!-- Heading -->
+            <li class="nav-header mt-3">Accounce</li>
+            <!--/ Heading -->
+
+            <!-- Expense -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon bi bi-wallet2"></i>
+                <p>
+                  Expense
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Add Expense</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Expense List</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Category</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!--/ Expense -->
+
+            <!-- Heading -->
+            <li class="nav-header">Authorization</li>
+            <!--/ Heading -->
+
+            <!-- Contacts -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon bi bi-person-bounding-box"></i>
+                <p>
+                  Contacts
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Add Supplier</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Supplier List</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Customers</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!--/ Contacts -->
+
+            <!-- User -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon bi bi-person-lock"></i>
+                <p>
+                  User
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Add User</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>User List</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Role</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!--/ User -->
+
+            <!-- Heading -->
+            <li class="nav-header mt-3">Other</li>
+            <!--/ Heading -->
+
+            <!-- Report -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon bi bi-graph-up-arrow"></i>
+                <p>
+                  Report
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Purchase & Sale Report</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Vat Report</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Supplier Report</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Customer Report</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Stock Report</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Stock Adjustment Report</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Trending Products Report</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Prodcut Pruchase Report</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Prodcut Sale Report</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Purchase Payment Report</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Sale Payment Report</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Expense Report</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Shipping Report</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Delivery Boy Report</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!--/ Report -->
+
+            <!-- Newsletter -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon bi bi-phone-vibrate"></i>
+                <p>Newsletter</p>
+              </a>
+            </li>
+            <!--/ Newsletter -->
+
+            <!-- Setting -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon bi bi-wrench"></i>
+                <p>
+                  Setting
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>General Setting</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>Business Setting</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link py-1">
+                    <p>E-Commerce Setting</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!--/ Setting -->
+
+          </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper" style="min-height: 1345.31px;">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1>Default Page</h1>
+            </div>
+            <div class="col-sm-6">
+              <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active">Default Page</li>
+              </ol>
+            </div>
+          </div>
+        </div><!-- /.container-fluid -->
+      </section>
+
+      <!-- Main content -->
+      <section class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- Col -->
+            <div class="col">
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Default Page</h3>
+                </div>
+                <div class="card-body">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Title</th>
+                        <th>Created</th>
+                        <th>Status</th>
+                        <th width="100">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>About Us</td>
+                        <td>08-04-23</td>
+                        <td>Published</td>
+                        <td>
+                          <button class="btn btn-sm btn-warning">
+                            <i class="bi bi-pencil"></i>
+                          </button>
+                          <button class="btn btn-sm btn-danger">
+                            <i class="bi bi-trash"></i>
+                          </button>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>Terms Of Use</td>
+                        <td>08-04-23</td>
+                        <td>Published</td>
+                        <td>
+                          <button class="btn btn-sm btn-warning">
+                            <i class="bi bi-pencil"></i>
+                          </button>
+                          <button class="btn btn-sm btn-danger">
+                            <i class="bi bi-trash"></i>
+                          </button>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>Terms & Conditions</td>
+                        <td>08-04-23</td>
+                        <td>Published</td>
+                        <td>
+                          <button class="btn btn-sm btn-warning">
+                            <i class="bi bi-pencil"></i>
+                          </button>
+                          <button class="btn btn-sm btn-danger">
+                            <i class="bi bi-trash"></i>
+                          </button>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>Refund Policy</td>
+                        <td>08-04-23</td>
+                        <td>Published</td>
+                        <td>
+                          <button class="btn btn-sm btn-warning">
+                            <i class="bi bi-pencil"></i>
+                          </button>
+                          <button class="btn btn-sm btn-danger">
+                            <i class="bi bi-trash"></i>
+                          </button>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>FAQs</td>
+                        <td>08-04-23</td>
+                        <td>Published</td>
+                        <td>
+                          <button class="btn btn-sm btn-warning">
+                            <i class="bi bi-pencil"></i>
+                          </button>
+                          <button class="btn btn-sm btn-danger">
+                            <i class="bi bi-trash"></i>
+                          </button>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>Cookie Policy</td>
+                        <td>08-04-23</td>
+                        <td>Published</td>
+                        <td>
+                          <button class="btn btn-sm btn-warning">
+                            <i class="bi bi-pencil"></i>
+                          </button>
+                          <button class="btn btn-sm btn-danger">
+                            <i class="bi bi-trash"></i>
+                          </button>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>Affiliate</td>
+                        <td>08-04-23</td>
+                        <td>Published</td>
+                        <td>
+                          <button class="btn btn-sm btn-warning">
+                            <i class="bi bi-pencil"></i>
+                          </button>
+                          <button class="btn btn-sm btn-danger">
+                            <i class="bi bi-trash"></i>
+                          </button>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>Career</td>
+                        <td>08-04-23</td>
+                        <td>Published</td>
+                        <td>
+                          <button class="btn btn-sm btn-warning">
+                            <i class="bi bi-pencil"></i>
+                          </button>
+                          <button class="btn btn-sm btn-danger">
+                            <i class="bi bi-trash"></i>
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>              
+            </div>
+            <!--/ Col -->
+          </div>
+          <!-- /.row -->
+        </div><!-- /.container-fluid -->
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+      <div class="p-3">
+        <h5>Title</h5>
+        <p>Sidebar content</p>
+      </div>
+    </aside>
+    <!-- /.control-sidebar -->
+
+    <!-- Main Footer -->
+    <footer class="main-footer text-sm">
+      <!-- To the right -->
+      <div class="float-right d-none d-sm-inline">
+        Anything you want
+      </div>
+      <!-- Default to the left -->
+      <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    </footer>
+  </div>
+  <!-- ./wrapper -->
+
+
+
+  <!-- jQuery -->
+  <script src="../../plugins/jquery/jquery.min.js"></script>
+
+  <!-- Bootstrap 4 -->
+  <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="../../dist/js/adminlte.min.js"></script>
+</body>
+</html>
