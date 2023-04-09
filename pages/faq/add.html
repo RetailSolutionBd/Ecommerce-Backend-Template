@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Blog Add | E-Commerce</title>
+  <title>FAQ Add | E-Commerce</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -29,9 +29,6 @@
     }
   </style>
   <!--/ summernote -->
-
-  <!-- Tagify -->
-  <link rel="stylesheet" href="../../plugins/tagify-master/tagify.css">
 
   <!-- Select 2 -->
   <link rel="stylesheet" href="../../plugins/select2/css/select2.min.css">
@@ -254,7 +251,7 @@
             <!--/ Page -->
 
             <!-- Blog -->
-            <li class="nav-item menu-open">
+            <li class="nav-item">
               <a href="#" class="nav-link">
                 <i class="nav-icon bi bi-file-font"></i>
                 <p>
@@ -264,7 +261,7 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="#" class="nav-link py-1 active">
+                  <a href="#" class="nav-link py-1">
                     <p>Add Blog</p>
                   </a>
                 </li>
@@ -292,7 +289,7 @@
             <!--/ Advertisement -->
 
             <!-- FAQ -->
-            <li class="nav-item">
+            <li class="nav-item menu-open">
               <a href="#" class="nav-link">
                 <i class="nav-icon bi bi-question-circle"></i>
                 <p>
@@ -302,7 +299,7 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="#" class="nav-link py-1">
+                  <a href="#" class="nav-link py-1 active">
                     <p>Add FAQ</p>
                   </a>
                 </li>
@@ -820,18 +817,6 @@
                   </div>
                   <!--/ Title -->
 
-                  <!-- Image -->
-                  <div class="form-group">
-                    <label for="exampleInputFile">Image</label>
-                    <div class="input-group">
-                      <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="exampleInputFile">
-                        <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                      </div>
-                    </div>
-                  </div>
-                  <!--/ Image -->
-
                   <!-- Description -->
                   <div class="form-group mb-6">
                     <label>Description</label>
@@ -841,34 +826,6 @@
                 </div>
               </div>
               <!--/ General Input -->
-
-              <!-- SEO Input -->
-              <div class="card">
-                <div class="card-header">SEO</div>
-                <div class="card-body">
-                  <!-- Title -->
-                  <div class="form-group">
-                    <label>Title</label>
-                    <input type="text" class="form-control" placeholder="Title">
-                  </div>
-                  <!--/ Title -->
-
-                  <!-- Description -->
-                  <div class="form-group mb-6">
-                    <label>Description</label>
-                    <textarea class="form-control" rows="5" placeholder="Description"></textarea>
-                  </div>
-                  <!--/ Description -->
-
-                  <!-- Keywords -->
-                  <div class="form-group mb-6">
-                    <label>Keywords</label>
-                    <input class="tagify form-control" name='basic' placeholder="Keywords">
-                  </div>
-                  <!--/ Keywords -->
-                </div>
-              </div>
-              <!--/ SEO Input -->
 
               <!-- Submit -->
               <div class="card">
@@ -898,28 +855,6 @@
                     </div>
                   </div>
                   <!--/ Publish -->
-
-                  <!-- Featured -->
-                  <div class="form-group clearfix">
-                    <div class="icheck-secondary d-inline">
-                      <input type="checkbox" id="featuredCheck">
-                      <label for="featuredCheck">
-                        Featured
-                      </label>
-                    </div>
-                  </div>
-                  <!--/ Featured -->
-
-                  <!-- Menu Item -->
-                  <div class="form-group clearfix">
-                    <div class="icheck-secondary d-inline">
-                      <input type="checkbox" id="menuItemCheck">
-                      <label for="menuItemCheck">
-                        Menu Item
-                      </label>
-                    </div>
-                  </div>
-                  <!--/ Menu Item -->
                 </div>
               </div>
               <!--/ Status -->
@@ -980,16 +915,6 @@
 
   <!-- Bootstrap 4 -->
   <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-  
-  <!-- Bootstrap Custom File Input -->
-  <script src="../../plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
-  <script>
-    $(function () {
-      // Bootstrap Custom File Input
-      bsCustomFileInput.init();
-    })
-  </script>
-  <!--/ Bootstrap Custom File Input -->
 
   <!-- Plugins -->
   <!-- Summernote -->
@@ -1005,17 +930,6 @@
     })
   </script>
   <!--/ Summernote -->
-
-  <!-- Tagify -->
-  <script src="../../plugins/tagify-master/tagify.min.js"></script>
-  <script>
-    // The DOM element you wish to replace with Tagify
-    var input = document.querySelector('.tagify');
-
-    // initialize Tagify on the above input node reference
-    new Tagify(input)
-  </script>
-  <!--/ Tagify -->
 
   <!-- Select2 -->
   <script src="../../plugins/select2/js/select2.full.min.js"></script>

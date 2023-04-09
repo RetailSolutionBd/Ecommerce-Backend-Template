@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Blog Add | E-Commerce</title>
+  <title>FAQ List | E-Commerce</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -16,27 +16,6 @@
   
   <!-- Theme style -->
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
-
-  <!-- Plugins -->
-  <!-- I Check -->
-  <link rel="stylesheet" href="../../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-  
-  <!-- summernote -->
-  <link rel="stylesheet" href="../../plugins/summernote/summernote-bs4.min.css">
-  <style>
-    .note-editor {
-      box-shadow: none;
-    }
-  </style>
-  <!--/ summernote -->
-
-  <!-- Tagify -->
-  <link rel="stylesheet" href="../../plugins/tagify-master/tagify.css">
-
-  <!-- Select 2 -->
-  <link rel="stylesheet" href="../../plugins/select2/css/select2.min.css">
-  <!--/ Select 2 -->
-  <!--/ Plugins -->
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
   <div class="wrapper">
@@ -254,7 +233,7 @@
             <!--/ Page -->
 
             <!-- Blog -->
-            <li class="nav-item menu-open">
+            <li class="nav-item">
               <a href="#" class="nav-link">
                 <i class="nav-icon bi bi-file-font"></i>
                 <p>
@@ -264,7 +243,7 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="#" class="nav-link py-1 active">
+                  <a href="#" class="nav-link py-1">
                     <p>Add Blog</p>
                   </a>
                 </li>
@@ -292,7 +271,7 @@
             <!--/ Advertisement -->
 
             <!-- FAQ -->
-            <li class="nav-item">
+            <li class="nav-item menu-open">
               <a href="#" class="nav-link">
                 <i class="nav-icon bi bi-question-circle"></i>
                 <p>
@@ -307,7 +286,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link py-1">
+                  <a href="#" class="nav-link py-1 active">
                     <p>FAQ List</p>
                   </a>
                 </li>
@@ -791,12 +770,12 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1>General Form</h1>
+              <h1>Page</h1>
             </div>
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active">General Form</li>
+                <li class="breadcrumb-item active">Page</li>
               </ol>
             </div>
           </div>
@@ -807,143 +786,44 @@
       <section class="content">
         <div class="container-fluid">
           <div class="row">
-            <!-- left column -->
-            <div class="col-md-6">
-              <!-- General Input -->
-              <div class="card card-outline card-secondary">
-                <div class="card-header">Details</div>
-                <div class="card-body">
-                  <!-- Title -->
-                  <div class="form-group">
-                    <label>Title</label>
-                    <input type="text" class="form-control" placeholder="Title">
-                  </div>
-                  <!--/ Title -->
-
-                  <!-- Image -->
-                  <div class="form-group">
-                    <label for="exampleInputFile">Image</label>
-                    <div class="input-group">
-                      <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="exampleInputFile">
-                        <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                      </div>
-                    </div>
-                  </div>
-                  <!--/ Image -->
-
-                  <!-- Description -->
-                  <div class="form-group mb-6">
-                    <label>Description</label>
-                    <textarea id="summernote"></textarea>
-                  </div>
-                  <!--/ Description -->
-                </div>
-              </div>
-              <!--/ General Input -->
-
-              <!-- SEO Input -->
-              <div class="card">
-                <div class="card-header">SEO</div>
-                <div class="card-body">
-                  <!-- Title -->
-                  <div class="form-group">
-                    <label>Title</label>
-                    <input type="text" class="form-control" placeholder="Title">
-                  </div>
-                  <!--/ Title -->
-
-                  <!-- Description -->
-                  <div class="form-group mb-6">
-                    <label>Description</label>
-                    <textarea class="form-control" rows="5" placeholder="Description"></textarea>
-                  </div>
-                  <!--/ Description -->
-
-                  <!-- Keywords -->
-                  <div class="form-group mb-6">
-                    <label>Keywords</label>
-                    <input class="tagify form-control" name='basic' placeholder="Keywords">
-                  </div>
-                  <!--/ Keywords -->
-                </div>
-              </div>
-              <!--/ SEO Input -->
-
-              <!-- Submit -->
-              <div class="card">
-                <div class="card-body text-right">
-                  <button type="submit" class="btn btn-secondary">Submit</button>
-                </div>
-              </div>
-              <!--/ Submit -->
-            </div>
-            <!--/.col (left) -->
-
-            <!-- right column -->
-            <div class="col-md-3">
-              <!-- Status -->
+            <!-- Col -->
+            <div class="col">
               <div class="card">
                 <div class="card-header">
-                  <h3 class="card-title">Status</h3>
+                  <h3 class="card-title">Page</h3>
                 </div>
                 <div class="card-body">
-                  <!-- Publish -->
-                  <div class="form-group clearfix">
-                    <div class="icheck-secondary d-inline">
-                      <input type="checkbox" id="publishedCheck">
-                      <label for="publishedCheck">
-                        Published
-                      </label>
-                    </div>
-                  </div>
-                  <!--/ Publish -->
-
-                  <!-- Featured -->
-                  <div class="form-group clearfix">
-                    <div class="icheck-secondary d-inline">
-                      <input type="checkbox" id="featuredCheck">
-                      <label for="featuredCheck">
-                        Featured
-                      </label>
-                    </div>
-                  </div>
-                  <!--/ Featured -->
-
-                  <!-- Menu Item -->
-                  <div class="form-group clearfix">
-                    <div class="icheck-secondary d-inline">
-                      <input type="checkbox" id="menuItemCheck">
-                      <label for="menuItemCheck">
-                        Menu Item
-                      </label>
-                    </div>
-                  </div>
-                  <!--/ Menu Item -->
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Question</th>
+                        <th>Category</th>
+                        <th>Created</th>
+                        <th>Status</th>
+                        <th width="100">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>What is Lorem ipsum?</td>
+                        <td>How to</td>
+                        <td>08-04-23</td>
+                        <td>Published</td>
+                        <td>
+                          <button class="btn btn-sm btn-warning">
+                            <i class="bi bi-pencil"></i>
+                          </button>
+                          <button class="btn btn-sm btn-danger">
+                            <i class="bi bi-trash"></i>
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
-              </div>
-              <!--/ Status -->
-
-              <!-- Category -->
-              <div class="card">
-                <div class="card-header">
-                  <h3 class="card-title">Category</h3>
-                </div>
-                <div class="card-body">
-                  <select class="select2" style="width: 100%;">
-                    <option selected="selected">Alabama</option>
-                    <option>Alaska</option>
-                    <option>California</option>
-                    <option>Delaware</option>
-                    <option>Tennessee</option>
-                    <option>Texas</option>
-                    <option>Washington</option>
-                  </select>
-                </div>
-              </div>
-              <!--/ Category -->
+              </div>              
             </div>
-            <!--/.col (right) -->
+            <!--/ Col -->
           </div>
           <!-- /.row -->
         </div><!-- /.container-fluid -->
@@ -975,59 +855,12 @@
   <!-- ./wrapper -->
 
 
+
   <!-- jQuery -->
   <script src="../../plugins/jquery/jquery.min.js"></script>
 
   <!-- Bootstrap 4 -->
   <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-  
-  <!-- Bootstrap Custom File Input -->
-  <script src="../../plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
-  <script>
-    $(function () {
-      // Bootstrap Custom File Input
-      bsCustomFileInput.init();
-    })
-  </script>
-  <!--/ Bootstrap Custom File Input -->
-
-  <!-- Plugins -->
-  <!-- Summernote -->
-  <script src="../../plugins/summernote/summernote-bs4.min.js"></script>
-  <script>
-    $(function () {      
-      // Summernote
-      $('#summernote').summernote({
-        placeholder: 'Hello Bootstrap 4',
-        tabsize: 2,
-        height: 300
-      });
-    })
-  </script>
-  <!--/ Summernote -->
-
-  <!-- Tagify -->
-  <script src="../../plugins/tagify-master/tagify.min.js"></script>
-  <script>
-    // The DOM element you wish to replace with Tagify
-    var input = document.querySelector('.tagify');
-
-    // initialize Tagify on the above input node reference
-    new Tagify(input)
-  </script>
-  <!--/ Tagify -->
-
-  <!-- Select2 -->
-  <script src="../../plugins/select2/js/select2.full.min.js"></script>
-  <script>
-    $(function () {  
-      //Initialize Select2 Elements
-      $('.select2').select2()
-    })    
-  </script>
-  <!--/ Select2 -->
-  <!--/ Plugins -->
-
   <!-- AdminLTE App -->
   <script src="../../dist/js/adminlte.min.js"></script>
 </body>
