@@ -1,0 +1,10 @@
+
+.select2-selection.select2-selection--single {
+    height: 37px;
+    padding: 7px;
+	border: 1px solid #ced4da;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow  {
+	top: 5px;
+}

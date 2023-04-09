@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Page Add | E-Commerce</title>
+  <title>Product Add | E-Commerce</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -29,6 +29,11 @@
     }
   </style>
   <!--/ summernote -->
+
+  <!-- Select 2 -->
+  <link rel="stylesheet" href="../../plugins/select2/css/select2.min.css">
+  <link rel="stylesheet" href="../../plugins/select2/css/custom.css">
+  <!--/ Select 2 -->
 
   <!-- Tagify -->
   <link rel="stylesheet" href="../../plugins/tagify-master/tagify.css">
@@ -221,7 +226,7 @@
             <!--/ Dashboard -->
 
             <!-- Page -->
-            <li class="nav-item menu-open">
+            <li class="nav-item">
               <a href="#" class="nav-link">
                 <i class="nav-icon bi bi-file-richtext"></i>
                 <p>
@@ -231,7 +236,7 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="#" class="nav-link py-1 active">
+                  <a href="#" class="nav-link py-1">
                     <p>Add Page</p>
                   </a>
                 </li>
@@ -321,7 +326,7 @@
             <!--/ Heading -->
 
             <!-- Product -->
-            <li class="nav-item">
+            <li class="nav-item menu-open">
               <a href="#" class="nav-link">
                 <i class="nav-icon bi bi-box"></i>
                 <p>
@@ -331,7 +336,7 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="#" class="nav-link py-1">
+                  <a href="#" class="nav-link py-1 active">
                     <p>Add Product</p>
                   </a>
                 </li>
@@ -787,12 +792,12 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1>General Form</h1>
+              <h1>Add Product</h1>
             </div>
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active">General Form</li>
+                <li class="breadcrumb-item active">Add Product</li>
               </ol>
             </div>
           </div>
@@ -809,25 +814,96 @@
               <div class="card card-outline card-secondary">
                 <div class="card-header">Details</div>
                 <div class="card-body">
-                  <!-- Title -->
-                  <div class="form-group">
-                    <label>Title</label>
-                    <input type="text" class="form-control" placeholder="Title">
+
+                  <!-- Product + SKU -->
+                  <div class="row">
+                    <div class="col-md-8">
+                      <!-- Name -->
+                      <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" class="form-control" placeholder="Name">
+                      </div>
+                      <!--/ Name -->
+                    </div>
+                    <div class="col-md-4">
+                      <!-- SKU -->
+                      <div class="form-group">
+                        <label>SKU</label>
+                        <input type="text" class="form-control" placeholder="SKU">
+                      </div>
+                      <!--/ SKU -->
+                    </div>
                   </div>
-                  <!--/ Title -->
+                  <!--/ Product + SKU -->
+
+                  <!-- Barcode + Unit + Brand -->
+                  <div class="row">
+                    <!-- Barcode Type -->
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Barcode Type</label>
+                        <select class="form-control">
+                          <option value="128">128</option>
+                        </select>
+                      </div>
+                    </div>
+                    <!--/ Barcode Type -->
+
+                    <!-- Unit -->
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Unit</label>
+                        <select class="form-control">
+                          <option value="Piece">Piece</option>
+                        </select>
+                      </div>
+                    </div>
+                    <!--/ Unit -->
+
+                    <!-- Brand -->
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Brand</label>                        
+                        <select class="select2 form-control">
+                          <option selected="selected">Alabama</option>
+                          <option>Alaska</option>
+                          <option>California</option>
+                          <option>Delaware</option>
+                          <option>Tennessee</option>
+                          <option>Texas</option>
+                          <option>Washington</option>
+                        </select>
+                      </div>
+                    </div>
+                    <!--/ Brand -->
+                  </div>
+                  <!--/ Barcode + Unit + Brand -->
 
                   <!-- Image -->
-                  <div class="form-group">
-                    <label for="exampleInputFile">Image</label>
-                    <div class="input-group">
-                      <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="exampleInputFile">
-                        <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="exampleInputFile">Image</label>
+                        <div class="input-group">
+                          <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="exampleInputFile">
+                            <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <!--/ Image -->
 
+                  <br><hr><br>
+
+                  <!-- Short Description -->
+                  <div class="form-group mb-6">
+                    <label>Short Description</label>
+                    <textarea class="form-control" rows="5"></textarea>
+                  </div>
+                  <!--/ Short Description -->
+                  
                   <!-- Description -->
                   <div class="form-group mb-6">
                     <label>Description</label>
@@ -837,6 +913,157 @@
                 </div>
               </div>
               <!--/ General Input -->
+
+              <!-- Alert Quantity + Product Type -->
+              <div class="card">
+                <!-- Card Body -->
+                <div class="card-body"> 
+                  <!-- Row    -->
+                  <div class="row">
+                    <!-- Alert Quantity -->
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Alert Quantity</label>
+                        <input type="text" class="form-control" placeholder="Alert Quantity">
+                      </div>
+                    </div>
+                    <!--/ Alert Quantity -->  
+
+                    <!-- Product Type -->
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Product Type</label>
+                        <select class="form-control" id="productTypeSelect">
+                          <option value="ProductTypeSingle">Single</option>
+                          <option value="ProductTypeVariable">Variable</option>
+                        </select>
+                      </div>
+                    </div>
+                    <!--/ Product Type -->
+                  </div> 
+                  <!--/ Row -->
+
+                  <br>
+
+                  <!-- Prodcut Type (Single or Variable) -->
+                    <!-- Single Product Type -->
+                    <div class="ProductTypeContent ProductTypeSingle">
+                      <!-- Row -->
+                      <div class="row">
+                          <!-- Purchase Price -->
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label>Purchase Price</label>
+                              <input type="text" class="form-control" placeholder="Purchase Price">
+                            </div>
+                          </div>
+                          <!--/ Purchase Price -->  
+                          
+                          <!-- Compare Price -->
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label>Compare Price</label>
+                              <input type="text" class="form-control" placeholder="Compare Price">
+                            </div>
+                          </div>
+                          <!--/ Compare Price -->  
+                          
+                          <!-- Sale Price -->
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label>Sale Price</label>
+                              <input type="text" class="form-control" placeholder="Sale Price">
+                            </div>
+                          </div>
+                          <!--/ Sale Price -->  
+                      </div>
+                      <!--/ Row -->
+                    </div>
+                    <!--/ Single Product Type -->
+
+                    <!-- Variable Product Type -->
+                    <div class="ProductTypeContent ProductTypeVariable" style="display: none;">
+                      <div class="variable_product_field_outer">
+                        <div class="row variable_product_field_outer_row">
+                          <!-- Col-md-12 -->
+                          <div class="col-md-12">
+                            <table class="table table-bordered">
+                              <tr>  
+                                <td>                                
+                                  <!-- Variation Type -->
+                                  <select name="add_remove_variation_type[]" id="add_remove_variation_type_1" class="form-control mb-3" >
+                                    <option>--Select type--</option>
+                                    <option>Personal No.</option>
+                                    <option>Company No.</option>
+                                    <option>Parents No.</option>
+                                  </select>
+                                  <!--/ Variation Type -->
+
+                                  <!-- Variation Value -->
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" name="add_remove_variation_value[]" id="add_remove_variation_value_1" placeholder="Variation Value" />
+                                  </div>
+                                  <!--/ Variation Value -->
+                                </td>
+
+                                <td>
+                                  <!-- SKU -->
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" name="add_remove_skue[]" id="add_remove_skue_1" placeholder="SKU" />
+                                  </div>  
+                                  <!--/ SKU -->
+                                </td>
+
+                                <td>                                  
+                                  <!-- Purchase Price -->
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" name="add_remove_purchase_price[]" id="add_remove_purchase_price_1" placeholder="Purchase Price" />
+                                  </div>
+                                  <!--/ Purchase Price -->
+                                  
+                                  <!-- Compare Price -->
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" name="add_remove_compare_price[]" id="add_remove_compare_price_1" placeholder="Compare Price" />
+                                  </div>
+                                  <!--/ Compare Price -->
+                                  
+                                  <!-- Sale Price -->
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" name="add_remove_sale_price[]" id="add_remove_sale_price_1" placeholder="Sale Price" />
+                                  </div>
+                                  <!--/ Sale Price -->
+                                </td>
+
+                                <!-- Copy & Remove Buttons -->
+                                <td width="80">                      
+                                  <div class="form-group add_del_btn_outer">
+                                    <button class="btn btn-default add_prType_btn_frm_field m-2" title="Copy or clone this row">
+                                      <i class="fas fa-copy"></i>
+                                    </button>
+                        
+                                    <button class="btn btn-default remove_prType_btn_frm_field m-2" disabled>
+                                      <i class="fas fa-trash-alt"></i>
+                                    </button>
+                                  </div>
+                                </td>
+                                <!--/ Copy & Remove Buttons -->    
+                              </tr>
+                            </table> 
+                          </div>
+                          <!--/ Col-md-12 -->                   
+                        </div>
+                      </div>
+
+                      <button class="btn py-0 add_new_variable_product_form_btn">
+                        <i class="fas fa-plus add_icon"></i> Add field row
+                      </button>
+                    </div>
+                    <!--/ Variable Product Type -->
+                  <!--/ Prodcut Type (Single or Variable) -->
+                </div>
+                <!--/ Card Body -->
+              </div>
+              <!--/ Alert Quantity + Product Type -->
 
               <!-- SEO Input -->
               <div class="card">
@@ -894,20 +1121,54 @@
                     </div>
                   </div>
                   <!--/ Publish -->
-
-                  <!-- Featured -->
-                  <div class="form-group clearfix">
-                    <div class="icheck-secondary d-inline">
-                      <input type="checkbox" id="featuredCheck">
-                      <label for="featuredCheck">
-                        Featured
-                      </label>
-                    </div>
-                  </div>
-                  <!--/ Featured -->
                 </div>
               </div>
               <!--/ Status -->
+
+              
+              <!-- Category -->
+              <div class="card">  
+                <div class="card-header">
+                  <h3 class="card-title">Category</h3>
+                </div>      
+                <div class="card-body">
+                  <div class="form-group">                     
+                    <select class="select2 form-control">
+                      <option selected="selected">Alabama</option>
+                      <option>Alaska</option>
+                      <option>California</option>
+                      <option>Delaware</option>
+                      <option>Tennessee</option>
+                      <option>Texas</option>
+                      <option>Washington</option>
+                    </select>
+                  </div>
+                </div>  
+              </div>
+              <!--/ Category -->
+
+              
+              <!-- Gallery -->
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Gallery</h3>
+                </div>
+                <div class="card-body">
+                  <!-- Gallery -->
+                  <div class="form-group">
+                    <div class="input-group">
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="GalleryFileInput">
+                        <label class="custom-file-label" for="GalleryFileInput">Choose file</label>
+                      </div>
+                    </div>
+                  </div>
+                  <!--/ Gallery -->                  
+                </div>
+              </div>
+              <!--/ Gallery -->
+
+
             </div>
             <!--/.col (right) -->
           </div>
@@ -973,6 +1234,16 @@
   </script>
   <!--/ Summernote -->
 
+  <!-- Select2 -->
+  <script src="../../plugins/select2/js/select2.full.min.js"></script>
+  <script>
+    $(function () {  
+      //Initialize Select2 Elements
+      $('.select2').select2()
+    })    
+  </script>
+  <!--/ Select2 -->
+
   <!-- Tagify -->
   <script src="../../plugins/tagify-master/tagify.min.js"></script>
   <script>
@@ -987,5 +1258,134 @@
 
   <!-- AdminLTE App -->
   <script src="../../dist/js/adminlte.min.js"></script>
+
+  <!-- Page Js -->  
+    <!-- Product Type Filter -->
+    <script>
+      $('#productTypeSelect').on('change', function() {
+          var type = $(this).val();
+          $('.ProductTypeContent').hide();
+      
+          $('.ProductTypeContent').each(function() {
+              if($(this).hasClass(type)) {
+                  $(this).show();
+              }
+          });
+      });
+    </script>
+    <!--/ Product Type Filter -->
+
+    <!-- Add Or Remove Fields for Variable Product -->    
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("body").on("click",".add_new_variable_product_form_btn", function (){ 
+          console.log("clicked");
+          var index = $(".variable_product_field_outer").find(".variable_product_field_outer_row").length + 1;
+          
+          $(".variable_product_field_outer").append(`
+            <div class="variable_product_field_outer">
+              <div class="row variable_product_field_outer_row">
+                <!-- Col-md-12 -->
+                <div class="col-md-12">
+                  <table class="table table-bordered">
+                    <tr>  
+                      <td>                                
+                        <!-- Variation Type -->
+                        <select name="add_remove_variation_type[]" id="add_remove_variation_type_${index}" class="form-control mb-3" >
+                          <option>--Select type--</option>
+                          <option>Personal No.</option>
+                          <option>Company No.</option>
+                          <option>Parents No.</option>
+                        </select>
+                        <!--/ Variation Type -->
+
+                        <!-- Variation Value -->
+                        <div class="form-group">
+                          <input type="text" class="form-control" name="add_remove_variation_value[]" id="add_remove_variation_value_${index}" placeholder="Variation Value" />
+                        </div>
+                        <!--/ Variation Value -->
+                      </td>
+
+                      <td>
+                        <!-- SKU -->
+                        <div class="form-group">
+                          <input type="text" class="form-control" name="add_remove_skue[]" id="add_remove_skue_${index}" placeholder="SKU" />
+                        </div>  
+                        <!--/ SKU -->
+                      </td>
+
+                      <td>                                  
+                        <!-- Purchase Price -->
+                        <div class="form-group">
+                          <input type="text" class="form-control" name="add_remove_purchase_price[]" id="add_remove_purchase_price_${index}" placeholder="Purchase Price" />
+                        </div>
+                        <!--/ Purchase Price -->
+                        
+                        <!-- Compare Price -->
+                        <div class="form-group">
+                          <input type="text" class="form-control" name="add_remove_compare_price[]" id="add_remove_compare_price_${index}" placeholder="Compare Price" />
+                        </div>
+                        <!--/ Compare Price -->
+                        
+                        <!-- Sale Price -->
+                        <div class="form-group">
+                          <input type="text" class="form-control" name="add_remove_sale_price[]" id="add_remove_sale_price_${index}" placeholder="Sale Price" />
+                        </div>
+                        <!--/ Sale Price -->
+                      </td>
+
+                      <!-- Copy & Remove Buttons -->
+                      <td width="80">                      
+                        <div class="form-group add_del_btn_outer">
+                          <button class="btn btn-default add_prType_btn_frm_field m-2" title="Copy or clone this row">
+                            <i class="fas fa-copy"></i>
+                          </button>
+              
+                          <button class="btn btn-default remove_prType_btn_frm_field m-2" disabled>
+                            <i class="fas fa-trash-alt"></i>
+                          </button>
+                        </div>
+                      </td>
+                      <!--/ Copy & Remove Buttons -->    
+                    </tr>
+                  </table> 
+                </div>
+                <!--/ Col-md-12 -->
+
+              </div>
+            </div>
+            `);
+                
+          $(".variable_product_field_outer").find(".remove_prType_btn_frm_field:not(:first)").prop("disabled", false);
+          $(".variable_product_field_outer").find(".remove_prType_btn_frm_field").first().prop("disabled", true);
+        });
+      });
+
+
+      $(document).ready(function(){
+        ///======Clone method
+        $("body").on("click", ".add_prType_btn_frm_field", function (e) {
+          var index     = $(e.target).closest(".variable_product_field_outer").find(".variable_product_field_outer_row").length + 1;
+          var cloned_el = $(e.target).closest(".variable_product_field_outer_row").clone(true);
+
+          $(e.target).closest(".variable_product_field_outer").last().append(cloned_el).find(".remove_prType_btn_frm_field:not(:first)").prop("disabled", false);
+          $(e.target).closest(".variable_product_field_outer").find(".remove_prType_btn_frm_field").first().prop("disabled", true);
+        
+          //change id
+          $(e.target).closest(".variable_product_field_outer").find(".variable_product_field_outer_row").last().find("input[type='text']").attr("id", "add_remove_variation_value_"+index);
+          $(e.target).closest(".variable_product_field_outer").find(".variable_product_field_outer_row").last().find("select").attr("id", "add_remove_variation_type_"+index);
+          // console.log(cloned_el);
+          //count++;
+        });
+
+        //===== delete the form fieed row
+        $("body").on("click", ".remove_prType_btn_frm_field", function () {
+          $(this).closest(".variable_product_field_outer_row").remove();
+          // console.log("success");
+        });
+      });
+    </script>
+    <!--/ Add Or Remove Fields for Variable Product -->
+  <!--/ Page Js -->
 </body>
 </html>
