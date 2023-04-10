@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Purchase Add | E-Commerce</title>
+  <title>Sale | E-Commerce</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -375,7 +375,7 @@
             <!--/ Product -->
 
             <!-- Purchase -->
-            <li class="nav-item menu-open">
+            <li class="nav-item">
               <a href="#" class="nav-link">
                 <i class="nav-icon fas fa-luggage-cart"></i>
                 <p>
@@ -385,7 +385,7 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="#" class="nav-link py-1 active">
+                  <a href="#" class="nav-link py-1">
                     <p>Add Purchase</p>
                   </a>
                 </li>
@@ -404,7 +404,7 @@
             <!--/ Purchase -->
 
             <!-- Sale -->
-            <li class="nav-item">
+            <li class="nav-item menu-open">
               <a href="#" class="nav-link">
                 <i class="nav-icon bi bi-lightning-charge"></i>
                 <p>
@@ -414,7 +414,7 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="#" class="nav-link py-1">
+                  <a href="#" class="nav-link py-1 active">
                     <p>Add Sale</p>
                   </a>
                 </li>
@@ -792,12 +792,12 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1>Purchase Add</h1>
+              <h1>Sale</h1>
             </div>
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active">Purchase Add</li>
+                <li class="breadcrumb-item active">Sale</li>
               </ol>
             </div>
           </div>
@@ -865,18 +865,18 @@
                       <textarea class="form-control" rows="3" placeholder="Note"></textarea>
                     </div>
                   </div>
-                  <!--/ Note -->
+                  <!--/ Note -->               
                 </div>
                 <!--/ Card Body -->
               </div>
               <!--/ General Input -->
 
-
-              <!-- Product -->
+              <!-- Products -->
               <div class="card">
                 <div class="card-header">
                   <h3 class="card-title">Product</h3>
                 </div>
+
                 <div class="card-body">                  
                   <!-- Search Product -->
                   <div class="form-group">     
@@ -969,12 +969,157 @@
                   <button class="btn py-0 add_new_purchase_product_form_btn">
                     <i class="fas fa-plus add_icon"></i> Add field row
                   </button>
-                  <!--/ Purchase Product Add or Remove Field -->  
+                  <!--/ Purchase Product Add or Remove Field -->     
                 </div>
               </div>
-              <!--/ Product -->
+              <!--/ Products -->
 
+              <!-- Discount -->
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Discount</h3>
+                </div>
 
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Type</label>
+                        <select class="form-control">
+                          <option>Fixed</option>
+                          <option>Percentage</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">                                          
+                      <div class="form-group">     
+                        <label>Amount</label>                
+                        <input type="text" class="form-control" placeholder="Amount">
+                      </div>
+                    </div>
+                  </div>
+
+                  <p><strong>Total</strong>: $120</p>
+                </div>
+              </div>
+              <!--/ Discount -->
+
+              <!-- Shipment -->
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Shipment</h3>
+                </div>
+
+                <div class="card-body">
+                  <div class="row">
+                    <!-- Place From -->
+                    <div class="col-md-6">
+                      <div class="text-center">
+                        <b>From</b>
+                        <hr>
+                      </div>
+
+                      <select class="form-control mb-3">
+                        <option>Fixed</option>
+                        <option>Fixed</option>
+                        <option>Percentage</option>
+                      </select>
+
+                      <select class="form-control">
+                        <option>Fixed</option>
+                        <option>Fixed</option>
+                        <option>Percentage</option>
+                      </select>
+                    </div> 
+                    <!--/ Place From -->  
+
+                    <!-- Place To -->
+                    <div class="col-md-6">
+                      <div class="text-center">
+                        <b>To</b>
+                        <hr>
+                      </div>
+
+                      <select class="form-control mb-3">
+                        <option>Fixed</option>
+                        <option>Fixed</option>
+                        <option>Percentage</option>
+                      </select>
+
+                      <select class="form-control">
+                        <option>Fixed</option>
+                        <option>Fixed</option>
+                        <option>Percentage</option>
+                      </select>
+                    </div> 
+                    <!--/ Place To -->                      
+                  </div>
+
+                  <br><br>
+                  <!-- Delivery boy or Delivery Method -->
+                  <div class="row">
+                    <!-- Delivery Method Select -->
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Deliver Method</label>
+                        <select class="form-control" id="ShipmentTypeSelect">
+                          <option value="courier_service">Courier Service</option>
+                          <option value="delivery_boy">Delivery Boy</option>
+                        </select>
+                      </div>
+                    </div>
+                    <!--/ Delivery Method Select -->                    
+                  </div>                  
+                  <!--/ Delivery boy or Delivery Method -->
+                  
+                  
+                  <!-- Delivery Method Content -->
+                  <div class="row">
+                    <!-- Courier Service + Delivery Boy -->
+                    <div class="col-md-6">
+                      <div class="ShipmentTypeContent courier_service">
+                        <div class="form-group">
+                          <label>Courier Service</label>
+                          <select class="form-control">
+                            <option>Select 1</option>
+                            <option>Select 2</option>
+                            <option>Select 3</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="ShipmentTypeContent delivery_boy" style="display: none;">
+                        <div class="form-group">
+                          <label>Delivery Boy</label>
+                          <select class="form-control">
+                            <option>Select 4</option>
+                            <option>Select 5</option>
+                            <option>Select 6</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <!--/ Courier Service + Delivery Boy -->
+
+                    <!-- Charge -->
+                    <div class="col-md-6">
+                      <p class="ml-3 mb-0">
+                        <b>Charge</b>: $50
+                      </p>
+                      
+                      <p class="ml-3">
+                        <b>Estimated time</b>: 7days
+                      </p>
+                    </div>
+                    <!--/ Charge -->
+                  </div>     
+                  <!--/ Delivery Method Content -->
+
+                </div>
+              </div>
+              <!--/ Shipment -->
+              
               <!-- Amount -->
               <div class="card">
                 <div class="card-header">
@@ -1012,29 +1157,31 @@
                     </div>
                     <!--/ Payment Date -->
 
-                    <!-- Note -->
-                    <div class="col-md-12">
+                     <!-- Note -->
+                     <div class="col-md-12">
                       <div class="form-group">
                         <label>Note</label>
                         <textarea class="form-control" rows="3" placeholder="Note"></textarea>
                       </div>
-                    </div>
-                    <!--/ Note -->
+                     </div>
+                     <!--/ Note -->
 
-                    <div class="col-md-4">
+                     <div class="col-md-4">
                       <p><b>Subtotal</b>: $750</p>
-                    </div>
-                    <div class="col-md-4">
+                     </div>
+                     <div class="col-md-4">
                       <p class="mb-0"><b>Discount</b>: $50</p>
                       <p><b>Shipment</b>: $80</p>
-                    </div>
-                    <div class="col-md-4">
+                     </div>
+                     <div class="col-md-4">
                       <p><b>Total</b>: $780</p>
-                    </div>
+                     </div>
                   </div>
                 </div>
               </div>
               <!--/ Amount -->
+
+
 
               <!-- Submit -->
               <div class="card">
@@ -1152,6 +1299,22 @@
   <script src="../../dist/js/adminlte.min.js"></script>
 
   <!-- Page Js -->  
+    <!-- Product Type Filter -->
+    <script>
+      $('#ShipmentTypeSelect').on('change', function() {
+          var type = $(this).val();
+          $('.ShipmentTypeContent').hide();
+      
+          $('.ShipmentTypeContent').each(function() {
+              if($(this).hasClass(type)) {
+                  $(this).show();
+              }
+          });
+      });
+    </script>
+    <!--/ Product Type Filter -->
+
+
     <!-- Add Or Remove Fields for Variable Product -->    
     <script type="text/javascript">
       $(document).ready(function(){
