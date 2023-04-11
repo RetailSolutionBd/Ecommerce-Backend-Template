@@ -16,11 +16,6 @@
   
   <!-- Theme style -->
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
-
-  <!-- Plugins -->
-  <!-- I Check -->
-  <link rel="stylesheet" href="../../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-  <!--/ Plugins -->
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
   <div class="wrapper">
@@ -588,7 +583,7 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="#" class="nav-link py-1 active">
+                  <a href="#" class="nav-link py-1">
                     <p>Add Supplier</p>
                   </a>
                 </li>
@@ -598,7 +593,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link py-1">
+                  <a href="#" class="nav-link py-1 active">
                     <p>Customers</p>
                   </a>
                 </li>
@@ -775,12 +770,12 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1>Add Suppplier</h1>
+              <h1>Add Customer</h1>
             </div>
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active">Add Suppplier</li>
+                <li class="breadcrumb-item active">Add Customer</li>
               </ol>
             </div>
           </div>
@@ -797,23 +792,6 @@
               <div class="card card-outline card-secondary">
                 <div class="card-header">Details</div>
                 <div class="card-body">
-
-                  <!-- row -->
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label>Type</label>
-                        <select class="form-control" id="SupplierTypeFilter">
-                          <option value="Individual">Individual</option>
-                          <option value="Business">Business</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                  <!--/ row -->
-                  <br>
-                  <!-- Individual Type Content -->
-                  <div class="SupplierTypeFilterContent Individual">
                     <!-- row -->
                     <div class="row">
                       <!-- First Name -->
@@ -850,21 +828,7 @@
                           <input type="text" class="form-control" placeholder="Phone">
                         </div>
                       </div>  
-                      <!--/ Phone -->                
-
-                      <!-- File -->
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="exampleInputFile">File</label>
-                          <div class="input-group">
-                            <div class="custom-file">
-                              <input type="file" class="custom-file-input" id="exampleInputFile">
-                              <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!--/ File -->
+                      <!--/ Phone -->   
                       
                       <!-- Address -->
                       <div class="col-md-12">
@@ -875,61 +839,7 @@
                       </div>
                       <!--/ Address -->
                     </div>
-                    <!--/ row -->
-                  </div>
-                  <!--/ Individual Type Content -->
-
-                  <!-- Supplier Type Content -->
-                  <div class="SupplierTypeFilterContent Business">
-                    <!-- row -->
-                    <div class="row">
-                      <!-- Business Name -->
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label>Business Name</label>
-                          <input type="text" class="form-control" placeholder="Business Name">
-                        </div>
-                      </div>
-                      <!--/ Business Name -->
-
-                      <!-- Email -->
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label>Email</label>
-                          <input type="text" class="form-control" placeholder="Email">
-                        </div>
-                      </div>   
-                      <!--/ Email --> 
-
-                      <!-- Phone -->
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label>Phone</label>
-                          <input type="text" class="form-control" placeholder="Phone">
-                        </div>
-                      </div>  
-                      <!--/ Phone -->                
-
-                      <!-- File -->
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="exampleInputFile">File</label>
-                          <div class="input-group">
-                            <div class="custom-file">
-                              <input type="file" class="custom-file-input" id="exampleInputFile">
-                              <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!--/ File -->
-                    </div>
-                    <!--/ row -->                    
-                  </div>
-                  <!--/ Supplier Type Content -->
-
-                  
-                  
+                    <!--/ row -->                  
                 </div>
               </div>
               <!--/ General Input -->
@@ -943,41 +853,6 @@
               <!--/ Submit -->
             </div>
             <!--/.col (left) -->
-
-            <!-- right column -->
-            <div class="col-xl-3 col-lg-4">
-              <!-- Status -->
-              <div class="card">
-                <div class="card-header">
-                  <h3 class="card-title">Status</h3>
-                </div>
-                <div class="card-body">
-                  <!-- Active -->
-                  <div class="form-group clearfix">
-                    <div class="icheck-secondary d-inline">
-                      <input type="checkbox" id="ActiveCheck">
-                      <label for="ActiveCheck">
-                        Active
-                      </label>
-                    </div>
-                  </div>
-                  <!--/ Active -->
-
-                  <!-- In Service -->
-                  <div class="form-group clearfix">
-                    <div class="icheck-secondary d-inline">
-                      <input type="checkbox" id="InServiceCheck">
-                      <label for="InServiceCheck">
-                        In Service
-                      </label>
-                    </div>
-                  </div>
-                  <!--/ In Service -->
-                </div>
-              </div>
-              <!--/ Status -->
-            </div>
-            <!--/.col (right) -->
           </div>
           <!-- /.row -->
         </div><!-- /.container-fluid -->
@@ -1014,35 +889,8 @@
 
   <!-- Bootstrap 4 -->
   <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-  
-  <!-- Bootstrap Custom File Input -->
-  <script src="../../plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
-  <script>
-    $(function () {
-      // Bootstrap Custom File Input
-      bsCustomFileInput.init();
-    })
-  </script>
-  <!--/ Bootstrap Custom File Input -->
 
   <!-- AdminLTE App -->
   <script src="../../dist/js/adminlte.min.js"></script>
-
-  <!-- Page JS -->
-  <!-- Supplier Type Filter -->
-<script>
-  $('#SupplierTypeFilter').on('change', function() {
-      var color = $(this).val();
-      $('div.SupplierTypeFilterContent').hide();
-  
-      $('div.SupplierTypeFilterContent').each(function() {
-          if($(this).hasClass(color)) {
-              $(this).show();
-          }
-      });
-  });
-  </script>
-  <!--/ Supplier Type Filter -->
-  <!--/ Page JS -->
 </body>
 </html>
